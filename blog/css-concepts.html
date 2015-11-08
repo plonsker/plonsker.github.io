@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Classes and IDs</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<header><h1>Plonsker's Technical Blog</h1></header>
+		<main>
+		<nav>
+		<a href="#">Home</a> | <a href="#">Contact</a>
+		<div class="hr"></div>
+		</nav>
+			<h4>On the Importance of and Difference between Classes and IDs in HTML and CSS</h4>
+			<h6>November 8, 2015</h6>
+			<div class="hr"></div>
+				<p>
+				Do you recall the slightly awkward transition from Web 1.0 to Web 2.0? If not, take a peak at the original <a href="http://www.warnerbros.com/archive/spacejam/movie/jam.htm">Space Jam website.</a> Web 1.0 was the era in which most sites were read-only and limited to seemingly lifeless designs (static, if you will). 2.0 is the current era of the web, in which users not only consume information on sites but also heavily interact with one another through those same sites. I consider the Space Jam site a prime example of that era in which developers were trying to make sites interactive and dynamic but lacked the proper tools, let alone the knowledge that static user consumption was merely a step in the web's evolution. 
+				</p>
+
+				<p>
+				I bring up that awkward phase for the web because I have found myself in my own clumsy transition in trying to make my pages more dynamic and user friendly. Unlike those developers though I have an awareness of the cultural change in the web and have the necessary tools to work in it. The trick is that I have to take time to reflect on what I have learned and see how it can be implemented, and my first step is to get microscopic in my own reflection. In small instances I can see universal concepts that can be applied to all areas of development.
+				</p>
+
+				<p>
+				The topic of this particular reflection is the nature of classes and IDs in HTML and CSS. As you many know, HTML is the language that describes the basic structure of a site, while CSS is the language that governs the presentation of that structure.
+				</p>
+				<p>
+				Here we have some HTML:
+
+				<pre>
+				&lt;header&gt;
+					The header of my site goes here!
+				&lt;/header&gt;
+				</pre>
+				</p>
+				And here we have some CSS:
+				<pre>
+					header {
+						text-align: center;
+						background-color: #E6E6E6;
+						background: linear-gradient(#DF7401, gray);
+						position: static;
+						border-radius: 10px;
+    				}
+				</pre>
+				</p>
+				<p>
+				While the HTML defines what goes into the particular site structurally, you can see that CSS allows one to dress up the content and present it a certain way. The code I have included is what defines the header at the top of this blog page.
+				</p>
+				<p>
+				Let us suppose though that we have many different sections and elements we would like to implement changes to. Things would get quite messy if one had to define every individual element on a page with its own bit of CSS. Luckily, we can apply particular changes to elements of the same kind or even unique elements with either classes or IDs. 
+				</p>
+				<p>
+				Classes allow us to change elements of a particular kind. All we would need to do is modify the HTML tags of these elements and write a few lines of CSS to govern them all. For instance, say we wanted to define particular paragraphs in an article we were presenting as italicized. while we would typically wrap paragraphs in &lt;p&gt; tags, we can create our
+				own unique tags for paragraphs we would like to italicize. 
+				</p>
+				<p>
+				First, the text would be wrapped in altered paragraph tags:
+				<pre>
+				&lt;p class="quote"&gt;
+					This would be an italicized paragraph.
+				&lt;/header&gt;
+				</pre>
+
+				Then in CSS, we would specifically target that class of paragraphs, the class being designated with a period before it:
+				<pre>
+				.quote {
+					font-style: italic; 
+				}
+				</pre>
+				</p>
+
+				<p>
+				Now each time a block of text is wrapped in that specific HTML tag, it will be italicized. The benefit of using classes is that it allows developers to apply a specific rule to elements of a particular kind. Classes keep our code nice and simple for multiple elements.
+				</p>
+
+				<p>
+				Let's say though that a developer wishes to make targeted changes to only one particular element. This is where IDs come in handy. For example, a developer wants to make one of the headers italicized on a page, yet the specific header is wrapped in &lt;h3&gt; tags, as are other headers as well. For the sake of clarity and sanity, the ID tag could be implemented to specify that the italics only be applied to the targeted header. This is best used when one does not wish to replicate the same effect anywhere on the page. 
+				</p>
+
+				<p>
+
+				The ID is specified in HTML much like with the classes:
+
+				<pre>
+				&lt;h3 id="dramatic"&gt;
+					This is a dramatic header in italics!
+				&lt;/h3&gt; 
+				</pre>
+
+				And is specified in CSS using a pound sign (aka hashtag):
+
+				<pre>
+					#dramatic {
+						font-style: italic;
+					}
+				</pre>
+				</p>
+				
+				<p>
+				The difference between classes and IDs is that the former is best for defining an attribute of multiple elements while an ID specifies a particular, individual element. For example, if I were to define myself with classes and IDs, I would say that I, Joe the American, fall under the class of 'American' and have the ID 'Joe'. Under the class American, I have particular attributes applied to me specific to everyone else who falls under the class 'American'. My unique characteristics as an individual though are defined under the ID 'Joe', which is applied only to me. I'm sure most people would have no trouble tearing that analogy apart based on real-world knowledge of the uniqueness of all Americans and the number of Joes in the country, but for now just try to keep thinking of it in terms of code.
+				</p>
+				
+				<p>
+				To recap, classes are used to define multiple elements while IDs are used to define individual, specific elements. If you find yourself using IDs to define multiple specific elements and it turns out they have the similar characteristics, consider switching to classes. If you find yourself with an element that's defined by a unique class, consider using only an ID. These best practices can keep your code tidy. Do a lot with a little!
+				 </p>
+
+				<p>
+				While I have learned some of the best practices using classes and IDs, I still have yet to take their use beyond simple, static pages. I figure that the further I go in displaying content, the more I will get out of my awkward phase of early development. 
+				</p>
+
+					 
+			<nav>
+			<a href="#">Previous Blog Post</a> | <a href="#">Next Blog Post</a>
+			</nav>
+		</main>
+
+	</body>
+
+</html>
+
+
