@@ -1,4 +1,4 @@
-plonsker.github.io
+http://plonsker.github.io
 
 ###What did you learn about CSS padding, borders, and margin by doing this challenge?
 
