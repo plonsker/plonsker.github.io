@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Brief Introduction to Enumerable Methods</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<header><h1>Plonsker's Technical Blog</h1></header>
+		<main>
+		<nav>
+		<a href="#">Home</a> | <a href="#">Contact</a>
+		<div class="hr"></div>
+		</nav>
+		<div>
+			<h4>Brief Introduction to Enumerable Methods</h4>
+			<h6>November 22, 2015</h6>
+			<div class="hr"></div>
+				<p>
+				In Ruby, Enumerable is a mixin that includes a bunch of helpful built-in methods for sorting, searching, and counting. For reference, a mixin is a module that belongs to a class. Together, a mixin breathes a little life into a class by giving it a ton of functionality. In fact, the same mixins can be used in multiple classes so they can pass information to one another, keeping your code more simple and elegant.  
+				</p>
+
+				<p>
+				Let's take a brief look an Enumerable method in order to get a sense of the power we can unleash. A fairly straightforward method is 'sort'. The sort method allows one create an array from an input and order the array either numerically/alphabetically or in an order specified in a bloc.
+				</p>
+
+				<p>
+				Let's say my input is 'dog bites man'. For this example, I'm going to incorporate the %w (word array) shortcut in order to keep our inputs and outputs simple. I learned it this week from the Ruby docs. 
+				<pre class="prettyprint lang-ruby">
+				%w(dog bites man).sort => ["bites", "man", "dog"]
+				
+				</pre>
+				</p>
+				Integers are ordered numerically before all alphabetical strings
+				<pre class="prettyprint lang-ruby">
+				%w(dog bites man 12).sort => ["12", bites", "man", "dog"]
+				
+				</pre>
+
+				<p>
+				Ruby inherently prioritizes capitalization in sorting, as you can see with our input being 'Dog bites man 12'. One can sort the input regardless of case by incorporating the cousin of the sort method: sort_by. Using the sort_by method with the downcase method in a bloc will result in an output that is truly alphabetical. 
+			
+				<pre class="prettyprint lang-ruby">
+				%w(Dog bites man 12).sort => ["12", "Dog", "bites", "man"]
+
+				%w(Dog bites man 12).sort_by {|x| x.downcase} => => ["12", "bites", "Dog", "man"]
+				</pre>
+				</p>
+				<p>
+				Blocs can also be used with the sort method to specify exact ordering. If one wishes to have an array in backwards order, one can specify so in the block with the comparison operator (<=>).
+
+				<pre class="prettyprint lang-ruby">
+				%w(dog bites man).sort {|x,y| y <=> x} => ["man", "dog", "bites"]
+				</pre>
+				</p>
+			
+				<p>
+				In sum, the sort method is a powerful little tool to organize data in a program, either by its inherent structure or by the terms one determines in a bloc. This method came in handy in various exercises over the past week, and I hope whoever checks out my post finds many uses for it as well. 
+				</p>
+
+		</div>
+		<div>
+			<a href="#">Previous Blog Post</a> | <a href="#">Next Blog Post</a>
+		</div>
+
+	</body>
+
+
+</html>
