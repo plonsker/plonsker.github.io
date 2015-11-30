@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Introduction to Ruby Classes and Instance Variables</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+	<header><h1>Plonsker's Technical Blog</h1></header>
+		<main>
+		<nav>
+		<a href="#">Home</a> | <a href="#">Contact</a>
+		<div class="hr"></div>
+		</nav>
+		<div>
+			<h4>Introduction to Ruby Classes and Instance Variables</h4>
+			<h6>November 15, 2015</h6>
+			<div class="hr"></div>
+				<p>
+				This week we came across classes in Ruby. Classes are collections of code that have various methods within them that pass information between each other to perform certain operations. To demonstrate how a class works, I am going to create a class that replicates the random track feature on itunes or on an ipod.
+				</p>
+
+				
+				<p>
+				For this example, I am going to use a rather small library limited to a few artists and their tracks. 
+				</p>
+
+				<p>
+				<ol>
+				<li>Metallica: "Master of Puppets", "Enter Sandman", "Hit The Lights"</li>
+				<li>Miles Davis: "So What", "Kind of Blue", "All Blues"</li>
+				<li>Dwight Yoakam: "I'll Be Gone", "South of Cincinnati", "It Won't Hurt"</li>
+				</ol>	
+				</p>
+
+				<p>
+				To begin, let's break up our tracks into a list ruby can use. In this case, we will use a combination of hashes and arrays.
+				<pre class="prettyprint lang-ruby">
+				ipod_library = {
+				    metallica: ["Master of Puppets", "Enter Sandman", "Hit The Lights"],
+				    davis: ["So What", "Kind of Blue", "All Blues"],
+				    yoakam: ["I'll Be Gone", "South of Cincinnati", "It Won't Hurt"]
+				  }
+				</pre>	
+				Here we have set the the artist names to symbols. This makes them as constant as integers, and allows us to access the names more easily. You will see how useful they are momentarily. 
+				</p>
+
+				<p>
+
+				Next, we're going to create a class that represents the overall action we want. Let's call the class 'RandomSong'
+
+				class RandomSong
+					#methods will go in here
+				end
+
+				RandomSong will store the particular operations to produce a random track from the library. First, we will define the library we are accessing within our class. 
+				</p>
+
+				<p>
+				<pre class="prettyprint lang-ruby">
+
+				class RandomSong
+
+				def initialize
+				  @ipod_library = {
+				    metallica: ["Master of Puppets", "Enter Sandman", "Hit The Lights"],
+				    davis: ["So What", "Kind of Blue", "All Blues"],
+				    yoakam: ["I'll Be Gone", "South of Cincinnati", "It Won't Hurt"]
+				  }
+				  end
+
+				end
+				</pre>
+				The initialize method is used to define terms that are going to be used right from the start as we hit the 'random track' button on our iPod. Here we are introduced to instance variables. These are variables that can be defined once then be used multiple times throughout a class. From now on in the class we can refer to our small library just with the variable @ipod_library.
+				</p>
+
+				<p>
+				Next, we will have a method that performs the specific function of selecting a song at random. Here is some simple code for if we were going to simply select a song from one artist:
+				</p>
+
+				<p>
+				<pre class="prettyprint lang-ruby">
+				metallica = ["Master of Puppets", "Enter Sandman", "Hit The Lights"]
+				metallica.sample
+				</pre>
+				</p>
+
+				<p>
+				This time we have a whole library with multiple values within it. Our code will then be an expanded version: 
+				<pre class="prettyprint lang-ruby">
+				def play
+				    @random_artist = @ipod_library.values.sample
+				    @track = @random_artist.sample
+				    puts @track
+				  end
+				  </pre>
+				</p>
+
+				<p>
+				The method has been defined as 'play', as when it is called it will play the selected track. Here we have a new instance variable @random_artist, which is the result of picking a random artist from the list. To select that random artist, we apply the #sample method to @ipod_library. Then we apply the same trick to that new variable to generate a random track. Now when @track is printed, a random track will be outputted from the library. 
+				</p>
+
+				<p>
+				Here’s the whole class:
+				<pre class="prettyprint lang-ruby">
+				class RandomSong
+
+				  def initialize
+				  @ipod_library = {
+				    metallica: ["Master of Puppets", "Enter Sandman", "Hit The Lights"],
+				    davis: ["So What", "Kind of Blue", "All Blues"],
+				    yoakam: ["I'll Be Gone", "South of Cincinnati", "It Won't Hurt"]
+				  }
+				  end
+				  def play
+				    @random_artist = @ipod_library.values.sample
+				    @track = @random_artist.sample
+				    puts @track
+				  end
+
+				end
+				</pre>
+				</p>
+
+				<p>
+				Now, how can we get it to work? All we will need to do is call a new instance of the class. Imagine the new instance in this situation being akin to each time we click the random button.
+				<pre class="prettyprint lang-ruby">
+
+				class RandomSong
+
+				  def initialize
+				  @ipod_library = {
+				    metallica: ["Master of Puppets", "Enter Sandman", "Hit The Lights"],
+				    davis: ["So What", "Kind of Blue", "All Blues"],
+				    yoakam: ["I'll Be Gone", "South of Cincinnati", "It Won't Hurt"]
+				  }
+				  end
+				  def play
+				    @random_artist = @ipod_library.values.sample
+				    @track = @random_artist.sample
+				    puts @track
+				  end
+
+				end
+
+
+
+				new_list = RandomSong.new
+				puts new_list.play	
+				</pre>			
+				</p>
+
+				<p>
+
+				This code will now generate a random track to play. Consider expanding the library yourself, as you may grow tired of the few songs within it. 
+
+
+				
+				</p>
+				
+		</div>
+		<div>
+			<a href="#">Previous Blog Post</a> | <a href="#">Next Blog Post</a>
+		</div>
+
+	</body>
+
+
+</html>
