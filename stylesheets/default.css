@@ -58,7 +58,7 @@ footer {
 }
 
 /*applying this CSS to img for now since only one img is embedded*/
-img {
+img { 
 	border: 2px solid #BDBDBD;
     border-radius: 25px;
 	margin: 15px 10px 15px 10px
