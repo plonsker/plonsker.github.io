@@ -9,7 +9,7 @@ body {
 nav {
 	margin-top: 10px
 }
-
+ 
 /* Header has gradient added to it to keep the awesomeness of the background image */
 
 header {
@@ -40,6 +40,25 @@ a:visited {
 	color: #4C0B5F;
 }
 
+.hide:focus ~ .answer {
+  display: none;
+}
+
+.show:focus ~ .answer {
+  display: block;
+}
+
+.intro {
+	text-align: left;
+}
+
+table, th, td {
+	border: 1px solid black;
+    padding: 15px;
+    text-align: left;
+}
+
+
 /*gradient added */
 main {
 	text-align: center;
@@ -49,6 +68,8 @@ main {
 	border-radius: 10px;
 
 }
+
+
 
 footer {
 	text-align: center;
@@ -71,3 +92,10 @@ img {
 	margin: 20px 0px 20px 10px;
 }		
 }
+
+#projects {
+	margin: 20px 0px 20px 10px;
+}		
+}
+
+
