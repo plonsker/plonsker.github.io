@@ -1,9 +1,21 @@
 body {
-	background-image: url("../imgs/mountains.jpg");
+	background-image: url("../imgs/bridge.jpg");
 	background-size: cover;
-	font-family: 'Oswald', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
 	font-weight: bold;
+	font-family: "Garamond", Garamond, Arial, sans-serif;
 	background-attachment: fixed;
+	background-color: #E6E6E6
+	padding: 20px;
+	position: fixed;
+	opacity: 0.9;
+	right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+
+	
 }
 
 nav {
@@ -14,11 +26,15 @@ nav {
 
 header {
 	text-align: center;
-	background-color: #E6E6E6;
-	background: linear-gradient(#DF7401, gray);
+	/*background-color: #E6E6E6;*/
 	position: static;
-	border-radius: 10px;
+	/*border-radius: 5px;*/
+	/*background: linear-gradient(white, #BDBDBD);*/
     }
+
+.linebreak {
+    border-bottom: thin solid #000000;
+}
 
 h1 {
     font-size: 50px;
@@ -29,15 +45,15 @@ h1 {
 }
 
 a:link {
-	color: #DF7401;
+	color: #484848;
 }
 
 a:hover {
-	color: #FF4000;
+	color: #989898;
 }
 
 a:visited {
-	color: #4C0B5F;
+	color: #989898;
 }
 
 .hide:focus ~ .answer {
@@ -65,7 +81,7 @@ main {
 	background: linear-gradient(white, #BDBDBD);
 	position: static;
 	padding: 15px 10px 15px 10px;
-	border-radius: 10px;
+	border-radius: 5px;
 
 }
 
@@ -73,7 +89,7 @@ main {
 
 footer {
 	text-align: center;
-	color: #DF7401;
+	color: #484848;
 	position: static;
 	font-size: 7px;
 }
