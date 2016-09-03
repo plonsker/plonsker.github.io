@@ -2,18 +2,19 @@ body { color: ; }
         a { color: #5e5e5e; }
       body, .perma-title, .menu-item { background: ; }
 
-                #nav-single { display: block; }
-    
-            .page-title { position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px 1px 1px 1px); clip: rect(1px, 1px, 1px, 1px); }
       
-            .comments { display: none; }
-      
-            @media screen and (min-width: 41em){ .permalink {  float: left; margin-bottom: 60px; } }
-    
+            @media screen and (min-width: 1000px){ .permalink {  float: left; margin-bottom: 60px; } }
+
             a { text-decoration: none; }
 
-            .img { image-orientation: from-image; }
       
             body, .perma-title { font-family: Helvetica, Arial, sans-serif; }
       
             body { font-size: 87.5%; }
+
+            #nav ul{ display: none;}
+
+            #menu-title { font-size: 200%;
+
+            }
+    }
