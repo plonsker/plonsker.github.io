@@ -1,10 +1,13 @@
-body { color: ; }
+body { color: ; 
+        width: 960px; 
+        margin: 0 auto; 
+}
         a { color: #5e5e5e; }
       body, .perma-title, .menu-item { background: ; }
 
       
-            @media screen and (min-width: 1000px){ .permalink {  float: left; margin-bottom: 60px; } }
-
+/*            @media screen and (min-width: 1000px){ .permalink {  float: left; margin-bottom: 60px; } }
+*/
             a { text-decoration: none; }
 
       
