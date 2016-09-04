@@ -1,4 +1,19 @@
-* {
+/*  #contentimage { 
+    display:block; 
+    top:1600px;
+    width:500px; 
+    height:400px; 
+    position:absolute;
+} 
+
+    #contentimage:hover { 
+        opacity:0.5; 
+        cursor:crosshair;
+    }
+*/
+
+
+/** {
 margin: 0;
 padding: 0;
 list-style-type:none;
@@ -132,6 +147,7 @@ a.prev:hover,a.next:hover {
   position:absolute;
   height:100%;
   width:100%;
+
 }
 .slider .slide:target {
   z-index: 100;
@@ -141,4 +157,12 @@ img {
   width:100%;
   position:fixed;
   left:0;
+  
 }
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}*/

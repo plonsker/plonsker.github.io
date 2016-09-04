@@ -4,72 +4,40 @@
     <title>Joe Plonsker</title>
 
 <link rel="stylesheet" type="text/css" href="stylesheets/photography.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="public/js/slideshow.js"></script>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<!-- <script src="public/js/slideshow.js"></script>
+ -->
    </head>
    <body>
    <main>
   
+<script type="text/javascript" src="public/js/slideshow.js"></script>
+<style type="text/css">
+#current { position: absolute; left: 0px; top: 0px; z-index: 0; }
+#next { position: absolute; left: 640px; top: 0px; z-index: 1; }
+#slideshow { position: relative; border: solid #2b2b2b 3px; overflow: hidden; }
+</style>
+</head>
+<body>
 
+  <h1>JavaScript slideshow demo</h1>
+
+  <script type="text/javascript">
+  var show = new SlideShow("", ["imgs/bridge.JPG","imgs/wtc_plonsker.JPG"], 240, 181);
+  document.write(show.getHTML());
+  show.run();
+  </script>
 <header>
 
   
 </header>
-<div class="slider">
-  <ul>
-    <li id="no-js-slider-1" class="slide">
-      <img src="imgs/bridge.JPG">
-      <a class="prev" href="#no-js-slider-10">prev</a>
-      <a class="next" href="#no-js-slider-2">next</a>
-    </li>
-    <li id="no-js-slider-2" class="slide">
-      <img src="imgs/5th_ave_women.JPG">
-      <a class="prev" href="#no-js-slider-1">prev</a>
-      <a class="next" href="#no-js-slider-3">next</a>           
-    </li>
-    <li id="no-js-slider-3" class="slide">
-      <img src="">
-      <a class="prev" href="#no-js-slider-2">prev</a>
-      <a class="next" href="#no-js-slider-4">next</a>           
-    </li>
-    <li id="no-js-slider-4" class="slide">
-      <img src="">
-      <a class="prev" href="#no-js-slider-3">prev</a>
-      <a class="next" href="#no-js-slider-5">next</a>          
-    </li>
-    <li id="no-js-slider-5" class="slide">
-      <img src=""> 
-      <a class="prev" href="#no-js-slider-4">prev</a> 
-      <a class="next" href="#no-js-slider-6">next</a>
-    </li>
-    <li id="no-js-slider-6" class="slide">
-      <img src=""> 
-      <a class="prev" href="#no-js-slider-5">prev</a> 
-      <a class="next" href="#no-js-slider-7">next</a>
-    </li>
-    <li id="no-js-slider-7" class="slide">
-      <img src=""> 
-      <a class="prev" href="#no-js-slider-6">prev</a> 
-      <a class="next" href="#no-js-slider-8">next</a>
-    </li>
-    <li id="no-js-slider-8" class="slide">
-      <img src=""> 
-      <a class="prev" href="#no-js-slider-7">prev</a> 
-      <a class="next" href="#no-js-slider-9">next</a>
-    </li>
-    <li id="no-js-slider-9" class="slide">
-      <img src=""> 
-      <a class="prev" href="#no-js-slider-8">prev</a> 
-      <a class="next" href="#no-js-slider-10">next</a>
-    </li>
-    <li id="no-js-slider-10" class="slide">
-      <img src="">
-      <a class="prev" href="#no-js-slider-9">prev</a>
-      <a class="next" href="#no-js-slider-1">next</a>          
-    </li>
-  </ul>
-</div>
+
+
+
+
+
+
 
 
 
