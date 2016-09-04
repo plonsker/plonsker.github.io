@@ -14,7 +14,12 @@ body { color: ; }
 
             #nav ul{ display: none;}
 
-            #menu-title { font-size: 200%;
+            #menu-title { font-size: 200%; }
 
+            .contact-imgs {
+                width: 100%; 
+                margin: 0 auto;
             }
+
+            
     }
