@@ -1,57 +1,55 @@
-body { color: ; 
+body { 
+        color: ; 
         width: 960px; 
         margin: 0 auto; 
 }
-        a { color: #5e5e5e; }
-      body, .perma-title, .menu-item { background: ; }
+
+a { 
+    color: #5e5e5e; 
+
+}
+
+body, .perma-title, .menu-item { 
+    background: ; 
+
+}
+
+a { 
+    text-decoration: none; 
+
+}
 
       
-/*            @media screen and (min-width: 1000px){ .permalink {  float: left; margin-bottom: 60px; } }
-*/
-            a { text-decoration: none; }
+body, .perma-title { 
+    font-family: Helvetica, Arial, sans-serif; 
 
+}
       
-            body, .perma-title { font-family: Helvetica, Arial, sans-serif; }
-      
-            body { font-size: 87.5%; }
+body { 
+    font-size: 87.5%; 
 
-            #nav ul{ display: none;}
+}
 
-            #menu-title, #contact { font-size: 200%; }
+#nav ul { 
+    display: none;
+    list-style: none;
 
-            .contact-imgs {
+}
+
+
+
+#menu-title, #contact { 
+    font-size: 150%; 
+}
+
+.contact-imgs {
                 display: none;
                 width: 100%; 
                 margin: 0 auto;
-            }
+}
 
             
-    }   
-
-#slider {
-    width: 720px;
-    height: 400px;
-    overflow: hidden;
+.photos img {
+    width: 800px;
+    height: 600px;
 }
-
-#slider .slides {
-    display: block;
-    width: 6000px;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-}
-
-#slider .slide {
-    float: left;
-    list-style-type: none;
-    width: 720px;
-    height: 400px;
-}
-
-/* helper css, since we don't have images */
-.slide1 {background: red;}
-.slide2 {background: blue;}
-.slide3 {background: green;}
-.slide4 {background: purple;}
-.slide5 {background: pink;}
