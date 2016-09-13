@@ -30,16 +30,22 @@ body {
 
 }
 
-#nav ul { 
+#nav { 
     display: none;
     list-style: none;
+    float: left;
 
 }
 
 
 
 #menu-title, #contact { 
-    font-size: 150%; 
+    font-size: 150%;
+    float: right;
+
+  position: relative;
+  left: -50%; /* or right 50% */
+  text-align: left;
 }
 
 .contact-imgs {
@@ -48,8 +54,21 @@ body {
                 margin: 0 auto;
 }
 
-            
+.photos {
+    float: right;
+}  
+
 .photos img {
-    width: 1000px;
-    height: 667px;
+    width: 900px;
+    height: 600px;
 }
+
+.site-tile a{
+    float: left;
+}
+
+.title {
+    width: 100px;
+    padding: 0;
+}
+
