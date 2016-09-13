@@ -1,7 +1,7 @@
 $(document).ready(function(){
     event.preventDefault();
     $("#menu-title").click(function(){
-        $("#nav").show();
+        $("#nav ul").show();
         $("#menu-title").hide();
     });
    

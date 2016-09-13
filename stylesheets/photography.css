@@ -30,10 +30,14 @@ body {
 
 }
 
-#nav { 
+#nav ul{ 
     display: none;
     list-style: none;
-    float: left;
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+    
 
 }
 
@@ -42,10 +46,9 @@ body {
 #menu-title, #contact { 
     font-size: 150%;
     float: right;
-
-  position: relative;
-  left: -50%; /* or right 50% */
-  text-align: left;
+    position: relative;
+    left: -50%;
+    text-align: left;
 }
 
 .contact-imgs {
@@ -60,7 +63,7 @@ body {
 
 .photos img {
     width: 900px;
-    height: 600px;
+    
 }
 
 .site-tile a{
