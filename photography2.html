@@ -5,13 +5,21 @@
 <body>
   <!-- all your great html... -->
   <script src="public/js/flickity.js"></script>
+    <script src="public/js/lazyload.js"></script>
+
 </body>
 
 
 <div class="main-gallery">
-  <div class="gallery-cell"><img src="imgs/DSC01140.JPG"></div>
-  <div class="gallery-cell"><img src="imgs/bridge.JPG"></div>
-
+<div class="gallery-cell"><img data-lazy="imgs/5th_ave_women.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/bridge.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00033.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00212.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00226.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00230.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00236.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC00290.JPG"></div>
+<div class="gallery-cell"><img data-lazy="imgs/DSC03252.JPG"></div>
 </div>
 
 <script>
@@ -19,7 +27,12 @@
 var flkty = new Flickity( '.main-gallery', {
   // options
   cellAlign: 'left',
-  contain: true
+  contain: true,
+  lazload: 'ondemand'
 });
 
+</script>
+
+<script>
+lazyload: true
 </script>

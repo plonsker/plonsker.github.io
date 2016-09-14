@@ -135,6 +135,7 @@ function jQueryBridget( namespace, PluginClass, $ ) {
 
 }
 
+
 // ----- updateJQuery ----- //
 
 // set $.bridget for v1 backwards compatibility
