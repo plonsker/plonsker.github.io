@@ -20,14 +20,34 @@ a {
 }
 
       
-body, .perma-title { 
-    font-family: Helvetica, Arial, sans-serif; 
+body, .perma-title, #about-text { 
+    font-family: Helvetica, Arial, sans-serif;
 
 }
       
 body { 
     font-size: 87.5%; 
 
+}
+
+#about-container {
+    width: 600px;
+}
+
+#about-text {
+    width: 300px;
+    float: left;
+}
+
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#about-imgs {
+    width: 300px;
+    float: left;
+    padding: 30px;
 }
 
 #nav ul { 
