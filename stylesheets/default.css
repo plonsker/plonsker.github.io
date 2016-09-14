@@ -39,6 +39,11 @@ body {
     float: left;
 }
 
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
 #about-imgs {
     width: 300px;
     float: left;
