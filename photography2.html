@@ -1,0 +1,25 @@
+<head>
+  <!-- other head stuff... -->
+  <link rel="stylesheet" href="stylesheets/flickity.css" media="screen">
+</head>
+<body>
+  <!-- all your great html... -->
+  <script src="public/js/flickity.js"></script>
+</body>
+
+
+<div class="main-gallery">
+  <div class="gallery-cell"><img src="imgs/DSC01140.JPG"></div>
+  <div class="gallery-cell"><img src="imgs/bridge.JPG"></div>
+
+</div>
+
+<script>
+
+var flkty = new Flickity( '.main-gallery', {
+  // options
+  cellAlign: 'left',
+  contain: true
+});
+
+</script>
