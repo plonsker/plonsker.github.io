@@ -98,6 +98,20 @@ http://flickity.metafizzy.co
   opacity: 1;
 }
 
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+
+
+/*joe images smaller*/
 
 .main-gallery .gallery-cell img {
 
