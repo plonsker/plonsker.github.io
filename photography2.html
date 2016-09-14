@@ -1,17 +1,51 @@
-<head>
-  <!-- other head stuff... -->
-  <link rel="stylesheet" href="stylesheets/flickity.css" media="screen">
-</head>
-<body>
-  <!-- all your great html... -->
-  <script src="public/js/flickity.js"></script>
+<!DOCTYPE html>
+  <head>
+    <title>Joe Plonsker | Photography</title>
 
-</body>
+  <link rel="stylesheet" href="stylesheets/flickity.css" media="screen">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="public/js/flickity.js"></script>
+
+   </head>
+    <body>
+  
+   <div class="container">
+        <div class="titles">
+
+          <h1 class="site-title">
+          <a href="http://plonsker.github.io/" rel="home">Joe Plonsker</a> | Photography <div id="menu-title">   &sect;</div></h1>
+          
+
+        </div>
+
+          <div id="nav">
+          <ul>
+            <li><a href="http://plonsker.github.io">&sect; Home</a></li>
+            <li><a href="http://plonsker.github.io/about">&sect; About</a></li>      
+            <li><a href="http://github.com/plonsker" target="_blank">&sect; Software</a></li> 
+            <li><a href="http://fiercepeople.bandcamp.com" target="_blank">&sect; Music</a></li>
+          </ul>
+        </div>
+
+
+
+
 
 
 <div class="main-gallery">
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC01140.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC07295.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00033.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC06128.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC01102.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/R0067564.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00230.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00513.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00569.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/R0061436.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC08635.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC06230.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC05616-01.jpeg"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0064322-02.jpeg"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00494.JPG"></div>
@@ -32,15 +66,6 @@
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0041685-01.jpeg"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0066155.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC03252.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC06128.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC01102.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/R0067564.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00230.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00513.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00569.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/R0061436.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC08635.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC06230.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC01090.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0041708-01.jpeg"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0067421.JPG"></div>
@@ -51,6 +76,7 @@
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC09227.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC03394.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0044962.JPG"></div>
+<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC00033.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC02534.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/IMG_20160115_135100-01.jpeg"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0043926-01.jpeg"></div>
@@ -140,7 +166,6 @@
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC07460.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC05693.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC05654.JPG"></div>
-<div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC01140.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0064404.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/R0067819.JPG"></div>
 <div class="gallery-cell"><img data-flickity-lazyload="imgs/DSC07854.JPG"></div>
@@ -179,7 +204,10 @@ var flkty = new Flickity( '.main-gallery', {
   // options
   cellAlign: 'left',
   contain: true,
-  lazyLoad: true
+  lazyLoad: true,
+  pageDots: false,
+  autoPlay: 3000
+
 });
 
 </script>
@@ -187,3 +215,17 @@ var flkty = new Flickity( '.main-gallery', {
 <script>
 lazyload: true
 </script>
+
+<div id="about-text">
+<i>Notice that some images are sideways? That's due to GitHub not recognizing EXIF data. I am working to resolve.</i> 
+</div>
+
+</div>
+
+
+
+
+
+</main>
+</body>
+</html>
