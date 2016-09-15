@@ -62,10 +62,32 @@ body {
     font-size: 150%; 
 }
 
+#menu-title-globe {
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+}
+
 .contact-imgs {
                 display: none;
                 width: 100%; 
                 margin: 0 auto;
 }
 
+.contact-all {
+    width: 600px;
+}
+
+.contact-main {
+     float: left;
+}
             
+.contact-main ul{
+    width: 100px;
+    list-style: none;
+
+}
+
+.contact-side-photo {
+    float: left;
+}
