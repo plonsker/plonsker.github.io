@@ -74,7 +74,7 @@ body {
 }
 
 .title {
-    width: 100px;
+    width: 100%;
     padding: 0;
 }
 
@@ -95,6 +95,7 @@ http://flickity.metafizzy.co
   overflow: hidden;
   position: relative;
   height: 100%;
+  width: 100%;
 }
 
 .flickity-slider {
@@ -205,3 +206,178 @@ float: right;}
   max-height: 506px;
 }
 
+
+/*media only below*/
+
+@media only screen and (max-device-width: 800px){
+    body { 
+        color: ; 
+        width: 100%; 
+        margin: 0 auto; 
+}
+
+a { 
+    color: #5e5e5e; 
+
+}
+
+body, .perma-title, .menu-item { 
+    background: ; 
+
+}
+
+a { 
+    text-decoration: none; 
+
+}
+
+      
+body, .perma-title, #about-text { 
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+      
+body { 
+    font-size: 87.5%; 
+
+}
+
+.title{
+  width: 100%;
+  float: right;
+}
+
+#about-container {
+    width: 600px;
+}
+
+#about-text {
+    width: 300px;
+    float: left;
+}
+
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#about-imgs {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
+#nav ul { 
+    font-size: 200%;
+    display: none;
+    list-style: none;
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+    clear: both;
+
+
+}
+
+
+
+.menu-container {
+    margin: 10px 0px 0px 20px;
+    width: 100%;
+    font-size: 200%;
+}
+
+.homepage-image {
+    margin: auto;
+    width: 63%;
+
+}
+
+#menu-title { 
+    font-size: 200%;
+    font-weight: bold;
+    width: 65%;
+    
+    margin: 8px;
+    float: right;
+    position: relative;
+}
+
+#nav {
+    font-size: 130%;
+    font-weight: bold;
+    width: 75%;
+    float: left;
+    margin: 8px;
+    float: right;
+    position: relative;
+
+}
+
+#contact{
+    font-size: 300%;
+    width: 55%;
+    float: right;
+    padding: 50px;
+}
+
+#menu-title-globe {
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-imgs {
+                display: none;
+                width: 100%; 
+                margin: 0 auto;
+}
+
+.contact-all {
+    width: 600px;
+}
+
+.contact-main {
+     float: left;
+}
+            
+.contact-main ul{
+    width: 100px;
+    list-style: none;
+
+}
+
+.contact-side-photo {
+    float: left;
+}
+
+.menu-container {
+    padding: 5px;
+}
+
+.main-gallery {
+  width: 100%;
+}
+
+#about-text {
+  font-size: 50%;
+    width: 80%;
+    float: right;
+    margin: 40px;
+
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flickity-enabled {
+  position: relative;
+}
+
+
+}
