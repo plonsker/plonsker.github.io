@@ -134,10 +134,10 @@ http://flickity.metafizzy.co
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: white;
+  fill: black;
 }
 .flickity-prev-next-button.no-svg {
-  color: white;
+  color: black;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
