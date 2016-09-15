@@ -56,13 +56,29 @@ body {
     font-size: 150%;
     color: black;
 
+
 }
 
 
 
 #menu-title { 
     font-size: 200%;
-    font-weight: bold; 
+    font-weight: bold;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 12px;
+    margin: 8px;
+}
+
+#nav {
+    font-weight: bold;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 12px;
+    margin: 8px;
+
 }
 
 #contact{
@@ -97,4 +113,8 @@ body {
 
 .contact-side-photo {
     float: left;
+}
+
+.menu-container {
+    padding: 5px;
 }
