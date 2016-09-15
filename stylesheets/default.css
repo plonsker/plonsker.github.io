@@ -53,13 +53,20 @@ body {
 #nav ul { 
     display: none;
     list-style: none;
+    font-size: 150%;
+    color: black;
 
 }
 
 
 
-#menu-title, #contact { 
-    font-size: 150%; 
+#menu-title { 
+    font-size: 200%;
+    font-weight: bold; 
+}
+
+#contact{
+    font-size: 200%;
 }
 
 #menu-title-globe {
