@@ -169,8 +169,7 @@ body {
 }
 
 #about-imgs {
-    width: 300px;
-    float: left;
+    width: 100%
     padding: 30px;
 }
 
@@ -219,6 +218,7 @@ body {
 }
 
 #contact{
+    display: none;
     font-size: 300%;
     width: 55%;
     float: right;
@@ -258,6 +258,23 @@ body {
 .menu-container {
     padding: 5px;
 }
+
+#about-text {
+    width: 90%;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    font-size: 200%;
+}
+
+#about-imgs img{
+    
+    width: 450px;
+    float: left;
+    position: relative;
+    
+}
+
 
 
 }
