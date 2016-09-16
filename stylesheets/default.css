@@ -119,6 +119,12 @@ body {
     padding: 5px;
 }
 
+#contact-about a {
+    font-size: 180%;
+    float: right;
+    width: 40%;
+}
+
 /*media only below*/
 
 @media only screen and (max-device-width: 800px){
@@ -281,6 +287,13 @@ body {
     position: relative;
     
 }
+
+#contact-about a {
+    width: 100%;
+    font-size: 300%;
+    float: right;
+}
+
 
 
 
