@@ -217,8 +217,7 @@ body {
 
 }
 
-#contact{
-    display: none;
+#contact {
     font-size: 300%;
     width: 55%;
     float: right;
@@ -233,8 +232,9 @@ body {
 
 .contact-imgs {
                 display: none;
-                width: 100%; 
+                width: 25%; 
                 margin: 0 auto;
+                clear: both;
 }
 
 .contact-all {
