@@ -119,6 +119,12 @@ body {
     padding: 5px;
 }
 
+#contact-about a {
+    font-size: 180%;
+    float: right;
+    width: 40%;
+}
+
 /*media only below*/
 
 @media only screen and (max-device-width: 800px){
@@ -217,9 +223,14 @@ body {
 
 }
 
+<<<<<<< HEAD
 #contact{
     display: none;
     font-size: 200%;
+=======
+#contact {
+    font-size: 300%;
+>>>>>>> master
     width: 55%;
     float: right;
     padding: 50px;
@@ -233,8 +244,13 @@ body {
 
 .contact-imgs {
                 display: none;
+<<<<<<< HEAD
                 width: 5%; 
+=======
+                width: 25%; 
+>>>>>>> master
                 margin: 0 auto;
+                clear: both;
 }
 
 .contact-all {
@@ -281,6 +297,13 @@ body {
     position: relative;
     
 }
+
+#contact-about a {
+    width: 100%;
+    font-size: 300%;
+    float: right;
+}
+
 
 
 
