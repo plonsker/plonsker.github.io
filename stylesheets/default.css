@@ -289,7 +289,7 @@ body {
     font-size: 200%;
 }
 
-#about-imgs img{
+#about-imgs {
     
     width: 450px;
     float: left;
@@ -298,10 +298,11 @@ body {
 }
 
 #contact-about a {
-    width: 50%;
-    font-size: 150%;
+    width: 100%;
+    font-size: 200%;
     float: right;
     font-weight: bold;
+    color: black;
 }
 
 
