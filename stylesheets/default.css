@@ -291,9 +291,10 @@ body {
 }
 
 #contact-about a {
-    width: 100%;
-    font-size: 300%;
+    width: 50%;
+    font-size: 150%;
     float: right;
+    font-weight: bold;
 }
 
 
