@@ -223,14 +223,9 @@ body {
 
 }
 
-<<<<<<< HEAD
-#contact{
+#contact a {
     display: none;
-    font-size: 200%;
-=======
-#contact {
-    font-size: 300%;
->>>>>>> master
+    font-size: 100%;
     width: 55%;
     float: right;
     padding: 50px;
@@ -243,14 +238,11 @@ body {
 }
 
 .contact-imgs {
-                display: none;
-<<<<<<< HEAD
-                width: 5%; 
-=======
-                width: 25%; 
->>>>>>> master
-                margin: 0 auto;
-                clear: both;
+    display: none;
+    width: 5%; 
+    width: 25%; 
+    margin: 0 auto;
+    clear: both;
 }
 
 .contact-all {
