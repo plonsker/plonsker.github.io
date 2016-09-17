@@ -31,15 +31,15 @@ body {
 }
 
 #nav ul{ 
-    font-size: 70%;
+    font-size: 90%;
+    font-weight: bold;
     display: none;
     list-style: none;
     float: right;
     position: relative;
-    left: -50%;
+    left: -40%;
     text-align: left;
     clear: both;
-    
 
 }
 
