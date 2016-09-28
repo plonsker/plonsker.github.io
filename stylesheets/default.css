@@ -26,17 +26,18 @@ body, .perma-title, #about-text {
 }
       
 body { 
-    font-size: 87.5%; 
+    font-size: 87.5%;
+    width: 80%;
 
 }
 
-#about-container {
+.about-container {
     width: 600px;
+    display: none;
 }
 
 #about-text {
-    width: 300px;
-    float: left;
+    width: 100%;
 }
 
 #about-text a {
@@ -50,6 +51,11 @@ body {
     padding: 30px;
 }
 
+
+#software-container {
+    width: 600px;
+    display: none;
+}
 #nav ul { 
     display: none;
     list-style: none;
@@ -57,6 +63,10 @@ body {
     color: black;
 
 
+}
+
+#photography-container {
+    display: none;
 }
 
 
@@ -81,8 +91,7 @@ body {
 
 }
 
-#contact{
-    font-size: 200%;
+#contact-container{
 }
 
 #menu-title-globe {
@@ -311,3 +320,197 @@ body {
 
 
 }
+
+/*! Flickity v2.0.3
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background: #333;
+}
+.flickity-prev-next-button:hover {
+  background: #F90;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+
+
+/*joe images smaller*/
+
+.main-gallery {
+  max-width: 759px;
+}
+
+.main-gallery .gallery-cell img {
+
+  max-width: 900px;
+  max-height: 506px;
+}
+
+
+/*media only below*/
+
+@media only screen and (max-device-width: 800px){
+    body { 
+        color: ; 
+        width: 100%; 
+        margin: 0 auto; 
+    }
+
+    .site-title {
+        font-size: 700%;
+    }
+
+    .main-content {
+        display: block;
+    margin: auto;
+    width: 70%;
+    }
+
+    #about-click, #software-click, #photography-click, #contact-click {
+        font-size: 400%;
+    }
+
+     .about-container, #software-container, #photography-container, #contact-container {
+        font-size: 200%;
+     }
+
+    .contact-imgs {
+        width: 100%;
+    }
+
+    .contact-imgs img{
+    width: 120px;
+    height: 120px;
+
+    }
+
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #333;
+}
+.flickity-prev-next-button:hover {
+  background: #F90;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px;
+}
+.flickity-prev-next-button.next {
+  right: -40px;
+}
+
+}
+
+
