@@ -26,7 +26,8 @@ body, .perma-title, #about-text {
 }
       
 body { 
-    font-size: 87.5%; 
+    font-size: 87.5%;
+    width: 80%;
 
 }
 
@@ -35,8 +36,7 @@ body {
 }
 
 #about-text {
-    width: 300px;
-    float: left;
+    width: 100%;
 }
 
 #about-text a {
@@ -308,6 +308,306 @@ body {
 
 
 
+
+
+}
+
+/*! Flickity v2.0.3
+http://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+          tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: #707070;
+}
+.flickity-prev-next-button:hover {
+  background: #334;
+}
+/* arrow color */
+.flickity-prev-next-button .arrow {
+  fill: black; 
+}
+.flickity-prev-next-button.no-svg {
+  color: black;
+}
+/* position outside */
+.flickity-prev-next-button.previous {
+  float: left;
+}
+.flickity-prev-next-button.next {
+float: right;}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
+
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  height: 4px;
+  width: 40px;
+  margin: 0;
+  border-radius: 0;
+}
+
+
+
+/*joe images smaller*/
+
+.main-gallery {
+  max-width: 759px;
+}
+
+.main-gallery .gallery-cell img {
+
+  max-width: 900px;
+  max-height: 506px;
+}
+
+
+/*media only below*/
+
+@media only screen and (max-device-width: 800px){
+    body { 
+        color: ; 
+        width: 100%; 
+        margin: 0 auto; 
+}
+
+a { 
+    color: #5e5e5e; 
+
+}
+
+body, .perma-title, .menu-item { 
+    background: ; 
+
+}
+
+a { 
+    text-decoration: none; 
+
+}
+
+      
+body, .perma-title, #about-text { 
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+      
+body { 
+    font-size: 87.5%; 
+
+}
+
+.title{
+  width: 100%;
+  float: right;
+}
+
+#about-container {
+    width: 600px;
+}
+
+#about-text {
+    width: 300px;
+    float: left;
+}
+
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#about-imgs {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
+#nav ul { 
+    font-size: 200%;
+    display: none;
+    list-style: none;
+    float: right;
+    position: relative;
+    left: -50%;
+    text-align: left;
+    clear: both;
+
+
+}
+
+
+
+.menu-container {
+    margin: 10px 0px 0px 20px;
+    width: 100%;
+    font-size: 200%;
+}
+
+.homepage-image {
+    margin: auto;
+    width: 63%;
+
+}
+
+#menu-title { 
+    font-size: 200%;
+    font-weight: bold;
+    width: 65%;
+    
+    margin: 8px;
+    float: right;
+    position: relative;
+}
+
+#nav {
+    font-size: 130%;
+    font-weight: bold;
+    width: 75%;
+    float: left;
+    margin: 8px;
+    float: right;
+    position: relative;
+
+}
+
+#contact{
+    font-size: 300%;
+    width: 55%;
+    float: right;
+    padding: 50px;
+}
+
+#menu-title-globe {
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-imgs {
+                display: none;
+                width: 100%; 
+                margin: 0 auto;
+}
+
+.contact-all {
+    width: 600px;
+}
+
+.contact-main {
+     float: left;
+}
+            
+.contact-main ul{
+    width: 100px;
+    list-style: none;
+
+}
+
+.contact-side-photo {
+    float: left;
+}
+
+.menu-container {
+    padding: 5px;
+}
+
+.main-gallery {
+  width: 100%;
+}
+
+#about-text {
+  font-size: 50%;
+    width: 100%;
+    margin: 40px;
+
+}
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.flickity-enabled {
+  position: relative;
+}
 
 
 }
