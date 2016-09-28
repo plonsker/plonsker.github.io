@@ -369,28 +369,28 @@ http://flickity.metafizzy.co
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
+  width: 30px;
+  height: 30px;
   border-radius: 5px;
-  background: #707070;
+  background: #333;
 }
 .flickity-prev-next-button:hover {
-  background: #334;
+  background: #F90;
 }
 /* arrow color */
 .flickity-prev-next-button .arrow {
-  fill: black; 
+  fill: white;
 }
 .flickity-prev-next-button.no-svg {
-  color: black;
+  color: white;
 }
 /* position outside */
 .flickity-prev-next-button.previous {
-  float: left;
+  left: -40px;
 }
 .flickity-prev-next-button.next {
-float: right;}
-
+  right: -40px;
+}
 /* ---- page dots ---- */
 
 .flickity-page-dots {
