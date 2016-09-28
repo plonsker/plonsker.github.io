@@ -65,6 +65,10 @@ body {
 
 }
 
+#photography-container {
+    display: none;
+}
+
 
 
 #menu-title { 
