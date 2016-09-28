@@ -463,16 +463,20 @@ http://flickity.metafizzy.co
     .main-content {
         display: block;
     margin: auto;
-    width: 70%;
+    width: 80%;
     }
 
     #about-click, #software-click, #photography-click, #contact-click {
         font-size: 400%;
     }
 
-     .about-container, #software-container, #photography-container, #contact-container {
+     .about-container, #photography-container, #contact-container {
         font-size: 200%;
-     }
+    }
+
+    #software-container {
+        font-size: 400%;
+    }
 
     .contact-imgs {
         width: 100%;
