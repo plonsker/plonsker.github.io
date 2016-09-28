@@ -29,3 +29,10 @@ $(document).ready(function(){
    
 });
 
+
+$(document).ready(function(){ 
+ event.preventDefault();
+    $("#contact-click").click(function(){
+        $(".contact-imgs").toggle();
+    });
+  });
