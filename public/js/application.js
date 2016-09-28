@@ -1,8 +1,16 @@
 $(document).ready(function(){
     event.preventDefault();
-    $("#menu-title").click(function(){
-        $("#nav ul").show();
-        $("#menu-title").hide();
+    $("#about-click").click(function(){
+        $(".about-container").toggle();
     });
    
 });
+
+$(document).ready(function(){
+    event.preventDefault();
+    $("#software-click").click(function(){
+        $("#software-container").toggle();
+    });
+   
+});
+

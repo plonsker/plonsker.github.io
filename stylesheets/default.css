@@ -31,8 +31,9 @@ body {
 
 }
 
-#about-container {
+.about-container {
     width: 600px;
+    display: none;
 }
 
 #about-text {
@@ -50,6 +51,11 @@ body {
     padding: 30px;
 }
 
+
+#software-container {
+    width: 600px;
+    display: none;
+}
 #nav ul { 
     display: none;
     list-style: none;
