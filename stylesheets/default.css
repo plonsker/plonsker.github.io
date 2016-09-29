@@ -69,6 +69,9 @@ body {
     display: none;
 }
 
+#music-container {
+    display: none;
+}
 
 
 #menu-title { 
@@ -466,11 +469,11 @@ http://flickity.metafizzy.co
     width: 80%;
     }
 
-    #about-click, #software-click, #photography-click, #contact-click {
+    #about-click, #software-click, #photography-click, #music-click, #contact-click {
         font-size: 400%;
     }
 
-     .about-container, #photography-container, #contact-container {
+     .about-container, #photography-container, #music-container, #contact-container {
         font-size: 200%;
     }
 
