@@ -36,3 +36,10 @@ $(document).ready(function(){
         $(".contact-imgs").toggle();
     });
   });
+
+$(document).ready(function(){ 
+ event.preventDefault();
+    $("#music-click").click(function(){
+        $("#music-container").toggle();
+    });
+  });
