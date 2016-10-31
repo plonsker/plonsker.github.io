@@ -1,4 +1,4 @@
-$(document).ready(function(event){
+$(document).ready(function(){
     event.preventDefault();
     $("#about-click").click(function(event){
         $(".about-container").toggle();
@@ -6,7 +6,7 @@ $(document).ready(function(event){
    
 });
 
-$(document).ready(function(event){
+$(document).ready(function(){
     event.preventDefault();
     $("#software-click").click(function(event){
         $("#software-container").toggle();
@@ -14,7 +14,7 @@ $(document).ready(function(event){
    
 });
 
-$(document).ready(function(event){
+$(document).ready(function(){
     event.preventDefault();
     $("#photography-click").click(function(event){
         $("#photography-container").toggle();
@@ -30,14 +30,14 @@ $(document).ready(function(event){
 });
 
 
-$(document).ready(function(event){ 
+$(document).ready(function(){ 
  event.preventDefault();
     $("#contact-click").click(function(event){
         $(".contact-imgs").toggle();
     });
   });
 
-$(document).ready(function(event){ 
+$(document).ready(function(){ 
  event.preventDefault();
     $("#music-click").click(function(event){
         $("#music-container").toggle();
