@@ -1,6 +1,6 @@
 $(document).ready(function(){
     event.preventDefault();
-    $("#about-click").click(function(){
+    $("#about-click").click(function(event){
         $(".about-container").toggle();
     });
    
@@ -8,7 +8,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     event.preventDefault();
-    $("#software-click").click(function(){
+    $("#software-click").click(function(event){
         $("#software-container").toggle();
     });
    
@@ -16,7 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     event.preventDefault();
-    $("#photography-click").click(function(){
+    $("#photography-click").click(function(event){
         $("#photography-container").toggle();
          var flkty = new Flickity( '.main-gallery', {
           cellAlign: 'left',
@@ -32,14 +32,14 @@ $(document).ready(function(){
 
 $(document).ready(function(){ 
  event.preventDefault();
-    $("#contact-click").click(function(){
+    $("#contact-click").click(function(event){
         $(".contact-imgs").toggle();
     });
   });
 
 $(document).ready(function(){ 
  event.preventDefault();
-    $("#music-click").click(function(){
+    $("#music-click").click(function(event){
         $("#music-container").toggle();
     });
   });
