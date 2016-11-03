@@ -1,8 +1,6 @@
-$(document).ready(function(event){
+$(document).ready(function(){
     event.preventDefault();
-    $("#about-click").click(function(event){
-        var event = window.event || event;
-        var elem = event.target || event.srcElement;
+    $("#about-click").click(function(){
         $(".about-container").toggle();
     });
    
@@ -10,9 +8,7 @@ $(document).ready(function(event){
 
 $(document).ready(function(){
     event.preventDefault();
-    $("#software-click").click(function(event){
-        var event = window.event || event;
-        var elem = event.target || event.srcElement;
+    $("#software-click").click(function(){
         $("#software-container").toggle();
     });
    
@@ -20,9 +16,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     event.preventDefault();
-    $("#photography-click").click(function(event){
-        var event = window.event || event;
-        var elem = event.target || event.srcElement;
+    $("#photography-click").click(function(){
         $("#photography-container").toggle();
          var flkty = new Flickity( '.main-gallery', {
           cellAlign: 'left',
@@ -33,6 +27,22 @@ $(document).ready(function(){
         });
     });
    
+});
+
+
+$(document).ready(function(){ 
+ event.preventDefault();
+    $("#contact-click").click(function(){
+        $(".contact-imgs").toggle();
+    });
+  });
+
+$(document).ready(function(){ 
+ event.preventDefault();
+    $("#music-click").click(function(){
+        $("#music-container").toggle();
+    });
+  });  
 });
 
 
