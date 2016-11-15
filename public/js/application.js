@@ -1,14 +1,14 @@
 $(document).ready(function(){
-    event.preventDefault();
-    $("#about-click").click(function(){
+    $("#about-click").click(function(event){
+        event.preventDefault();
         $(".about-container").toggle();
     });
    
 });
 
 $(document).ready(function(){
-    event.preventDefault();
-    $("#software-click").click(function(){
+    $("#software-click").click(function(event){
+       event.preventDefault();
         $("#software-container").toggle();
     });
    
