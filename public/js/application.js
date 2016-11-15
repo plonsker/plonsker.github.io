@@ -8,15 +8,15 @@ $(document).ready(function(){
 
 $(document).ready(function(){
     $("#software-click").click(function(event){
-       event.preventDefault();
+        event.preventDefault();
         $("#software-container").toggle();
     });
    
 });
 
 $(document).ready(function(){
-    event.preventDefault();
-    $("#photography-click").click(function(){
+    $("#photography-click").click(function(event){
+        event.preventDefault();
         $("#photography-container").toggle();
          var flkty = new Flickity( '.main-gallery', {
           cellAlign: 'left',
@@ -31,15 +31,15 @@ $(document).ready(function(){
 
 
 $(document).ready(function(){ 
- event.preventDefault();
-    $("#contact-click").click(function(){
+    $("#contact-click").click(function(event){
+        event.preventDefault();
         $(".contact-imgs").toggle();
     });
   });
 
 $(document).ready(function(){ 
- event.preventDefault();
-    $("#music-click").click(function(){
+    $("#music-click").click(function(event){
+        event.preventDefault();
         $("#music-container").toggle();
     });
   });
