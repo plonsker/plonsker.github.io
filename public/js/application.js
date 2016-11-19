@@ -34,6 +34,7 @@ $(document).ready(function(){
     $("#contact-click").click(function(event){
         event.preventDefault();
         $(".contact-imgs").toggle();
+        $("#contact-click").hide();
     });
   });
 
