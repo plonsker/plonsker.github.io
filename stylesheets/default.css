@@ -208,9 +208,11 @@ body {
     font-size: 200%;
 }
 
-.homepage-image {
+#homepage-image {
     margin: auto;
     width: 63%;
+    width: 600px;
+    height: 400px;
 
 }
 
