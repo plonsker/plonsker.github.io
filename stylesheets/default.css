@@ -137,10 +137,14 @@ body {
     width: 40%;
 }
 
-#mini-gallery {
+#mini-gallery, #mini-gallery-contact{
   margin: auto;
   width: 600px;
   list-style: none;
+}
+
+#mini-gallery-contact img{
+  padding: 100px;
 }
 
 #mini-gallery img{
