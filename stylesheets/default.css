@@ -137,6 +137,18 @@ body {
     width: 40%;
 }
 
+#mini-gallery {
+  margin: auto;
+  width: 600px;
+  list-style: none;
+}
+
+#mini-gallery img{
+  width: 200px;
+  float: left;
+  margin: 40px;
+  }
+
 /*media only below*/
 
 @media only screen and (max-device-width: 800px){
