@@ -1,34 +1,22 @@
-body { 
-        color: ; 
-        width: 960px; 
-        margin: 0 auto; 
+body {
+        color: ;
+        width: 960px;
+        margin: 0 auto;
 }
 
-a { 
-    color: #5e5e5e; 
-
+a {
+    color: #5e5e5e;
+    text-decoration: none;
 }
 
-body, .perma-title, .menu-item { 
-    background: ; 
 
-}
-
-a { 
-    text-decoration: none; 
-
-}
-
-      
-body, .perma-title, #about-text { 
+body, .perma-title, #about-text {
     font-family: Helvetica, Arial, sans-serif;
-
 }
-      
-body { 
+
+body {
     font-size: 87.5%;
     width: 80%;
-
 }
 
 .about-container, #software-container {
@@ -56,13 +44,11 @@ body {
     width: 600px;
     display: none;
 }
-#nav ul { 
+#nav ul {
     display: none;
     list-style: none;
     font-size: 150%;
     color: black;
-
-
 }
 
 #photography-container {
@@ -74,7 +60,7 @@ body {
 }
 
 
-#menu-title { 
+#menu-title {
     font-size: 200%;
     font-weight: bold;
     position:absolute;
@@ -91,10 +77,6 @@ body {
     right:0;
     padding: 12px;
     margin: 8px;
-
-}
-
-#contact-container{
 }
 
 #menu-title-globe {
@@ -105,7 +87,7 @@ body {
 
 .contact-imgs {
     display: none;
-    width: 100%; 
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -116,7 +98,7 @@ body {
 .contact-main {
      float: left;
 }
-            
+
 .contact-main ul{
     width: 100px;
     list-style: none;
@@ -156,35 +138,35 @@ body {
 /*media only below*/
 
 @media only screen and (max-device-width: 800px){
-    body { 
-        color: ; 
-        width: 100%; 
-        margin: 0 auto; 
+    body {
+        color: ;
+        width: 100%;
+        margin: 0 auto;
 }
 
-a { 
-    color: #5e5e5e; 
-
-}
-
-body, .perma-title, .menu-item { 
-    background: ; 
+a {
+    color: #5e5e5e;
 
 }
 
-a { 
-    text-decoration: none; 
+body, .perma-title, .menu-item {
+    background: ;
 
 }
 
-      
-body, .perma-title, #about-text { 
+a {
+    text-decoration: none;
+
+}
+
+
+body, .perma-title, #about-text {
     font-family: Helvetica, Arial, sans-serif;
 
 }
-      
-body { 
-    font-size: 87.5%; 
+
+body {
+    font-size: 87.5%;
 
 }
 
@@ -207,7 +189,7 @@ body {
     padding: 30px;
 }
 
-#nav ul { 
+#nav ul {
     display: none;
     list-style: none;
     font-size: 150%;
@@ -232,11 +214,11 @@ body {
 
 }
 
-#menu-title { 
+#menu-title {
     font-size: 200%;
     font-weight: bold;
     width: 65%;
-    
+
     margin: 8px;
     float: right;
     position: relative;
@@ -276,8 +258,8 @@ body {
 
 .contact-imgs {
     display: none;
-    width: 5%; 
-    width: 25%; 
+    width: 5%;
+    width: 25%;
     margin: 0 auto;
     clear: both;
 }
@@ -289,7 +271,7 @@ body {
 .contact-main {
      float: left;
 }
-            
+
 .contact-main ul{
     width: 100px;
     list-style: none;
@@ -320,11 +302,11 @@ body {
 }
 
 #about-imgs {
-    
+
     width: 450px;
     float: left;
     position: relative;
-    
+
 }
 
 #contact-about a {
@@ -334,126 +316,6 @@ body {
     font-weight: bold;
     color: black;
 }
-
-
-
-
-
-
-}
-
-/*! Flickity v2.0.3
-http://flickity.metafizzy.co
----------------------------------------------- */
-
-.flickity-enabled {
-  position: relative;
-}
-
-.flickity-enabled:focus { outline: none; }
-
-.flickity-viewport {
-  overflow: hidden;
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-
-.flickity-slider {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-/* draggable */
-
-.flickity-enabled.is-draggable {
-  -webkit-tap-highlight-color: transparent;
-          tap-highlight-color: transparent;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport {
-  cursor: move;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
-  cursor: -webkit-grabbing;
-  cursor: grabbing;
-}
-
-/* ---- previous/next buttons ---- */
-
-.flickity-prev-next-button {
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
-  background: #333;
-}
-.flickity-prev-next-button:hover {
-  background: #F90;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
-  color: white;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}
-/* ---- page dots ---- */
-
-.flickity-page-dots {
-  position: absolute;
-  width: 100%;
-  bottom: -25px;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-  text-align: center;
-  line-height: 1;
-}
-
-.flickity-rtl .flickity-page-dots { direction: rtl; }
-
-.flickity-page-dots .dot {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 0 8px;
-  background: #333;
-  border-radius: 50%;
-  opacity: 0.25;
-  cursor: pointer;
-}
-
-.flickity-page-dots .dot.is-selected {
-  opacity: 1;
-}
-
-.flickity-page-dots {
-  bottom: -22px;
-}
-/* dots are lines */
-.flickity-page-dots .dot {
-  height: 4px;
-  width: 40px;
-  margin: 0;
-  border-radius: 0;
-}
-
-
 
 /*joe images smaller*/
 
@@ -471,10 +333,10 @@ http://flickity.metafizzy.co
 /*media only below*/
 
 @media only screen and (max-device-width: 800px){
-    body { 
-        color: ; 
-        width: 100%; 
-        margin: 0 auto; 
+    body {
+        color: ;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .site-title {
@@ -493,10 +355,16 @@ http://flickity.metafizzy.co
 
      .about-container, #photography-container, #music-container, #contact-container {
         font-size: 200%;
+        width: 100%;
     }
 
+    #photography-container a, #contact-container a {
+       font-size: 200%;
+       width: 100%;
+   }
+
     #software-container {
-        font-size: 400%;
+        font-size: 300%;
     }
 
     .contact-imgs {
@@ -509,33 +377,4 @@ http://flickity.metafizzy.co
 
     }
 
-
-/* ---- previous/next buttons ---- */
-
-.flickity-prev-next-button {
-  width: 100px;
-  height: 100px;
-  border-radius: 5px;
-  background: #333;
 }
-.flickity-prev-next-button:hover {
-  background: #F90;
-}
-/* arrow color */
-.flickity-prev-next-button .arrow {
-  fill: white;
-}
-.flickity-prev-next-button.no-svg {
-  color: white;
-}
-/* position outside */
-.flickity-prev-next-button.previous {
-  left: -40px;
-}
-.flickity-prev-next-button.next {
-  right: -40px;
-}
-
-}
-
-
