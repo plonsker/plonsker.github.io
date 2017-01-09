@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+body a {
+        font-weight: bold;
+}
+
 
 body, .perma-title, #about-text {
     font-family: Helvetica, Arial, sans-serif;
@@ -349,17 +353,17 @@ body {
     width: 80%;
     }
 
-    #about-click, #software-click, #photography-click, #music-click, #contact-click {
+    #about-click, #software-click, #photography-click, #music-click, #contact-click, #music-click a{
         font-size: 300%;
     }
 
-     .about-container, #photography-container, #music-container, #contact-container {
+     .about-container, #about-text, #photography-container, #music-container, #contact-container {
         font-size: 200%;
         width: 100%;
     }
 
-     #photography-container a, #contact-container a {
-       font-size: 200%;
+     #photography-container a, #contact-container a, #music-container a {
+       font-size: 100%;
        width: 100%;
    }
 
