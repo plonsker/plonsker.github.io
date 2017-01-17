@@ -28,7 +28,7 @@ $(document).ready(function(){
     });
 });
 
-$(document).ready(function(){
+$(document).ready(function(){ 
     $("#music-click").click(function(event){
         event.preventDefault();
         $("#music-container").fadeToggle();
