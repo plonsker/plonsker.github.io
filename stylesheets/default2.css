@@ -1,0 +1,384 @@
+body {
+        color: ;
+        width: 960px;
+        margin: 0 auto;
+}
+
+a {
+    color: #5e5e5e;
+    text-decoration: none;
+}
+
+body a {
+        font-weight: bold;
+}
+
+
+body, .perma-title, #about-text {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-size: 87.5%;
+    width: 80%;
+}
+
+.about-container, #software-container {
+    width: 700px;
+    display: none;
+}
+
+#about-text {
+    width: 100%;
+}
+
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#about-imgs {
+    width: 300px;
+    float: left;
+    padding: 30px;
+}
+
+
+#software-container {
+    width: 600px;
+    display: none;
+}
+#nav ul {
+    display: none;
+    list-style: none;
+    font-size: 150%;
+    color: black;
+}
+
+/*#photography-container {
+    display: none;
+}*/
+
+#music-container {
+    display: none;
+}
+
+
+#menu-title {
+    font-size: 200%;
+    font-weight: bold;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 12px;
+    margin: 8px;
+}
+
+#nav {
+    font-weight: bold;
+    position:absolute;
+    top:0;
+    right:0;
+    padding: 12px;
+    margin: 8px;
+}
+
+#menu-title-globe {
+    font-size: 300%;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-imgs {
+    display: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contact-all {
+    width: 600px;
+}
+
+.contact-main {
+     float: left;
+}
+
+.contact-main ul{
+    width: 100px;
+    list-style: none;
+
+}
+
+.contact-side-photo {
+    float: left;
+}
+
+.menu-container {
+    padding: 5px;
+}
+
+#contact-about a {
+    font-size: 180%;
+    float: right;
+    width: 40%;
+}
+
+#mini-gallery, #mini-gallery-contact{
+  margin: auto;
+  width: 600px;
+  list-style: none;
+}
+
+#mini-gallery-contact img{
+  padding: 100px;
+}
+
+#mini-gallery img{
+  width: 200px;
+  float: left;
+  margin: 40px;
+  }
+
+/*media only below*/
+
+@media only screen and (max-device-width: 800px){
+    body {
+        color: ;
+        width: 100%;
+        margin: 0 auto;
+}
+
+a {
+    color: #5e5e5e;
+
+}
+
+body, .perma-title, .menu-item {
+    background: ;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+
+body, .perma-title, #about-text {
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+body {
+    font-size: 87.5%;
+
+}
+
+#about-container {
+    width: 600px;
+}
+
+#about-text {
+    width: 300px;
+    float: left;
+}
+
+#about-text a {
+    color: #000000;
+    font-weight: bold;
+}
+
+#about-imgs {
+    width: 100%
+    padding: 30px;
+}
+
+#nav ul {
+    display: none;
+    list-style: none;
+    font-size: 150%;
+    color: black;
+
+
+}
+
+
+
+.menu-container {
+    margin: 10px 0px 0px 20px;
+    width: 100%;
+    font-size: 200%;
+}
+
+.homepage-image {
+    margin: auto;
+    width: 63%;
+    width: 600px;
+    height: 400px;
+
+}
+
+#menu-title {
+    font-size: 200%;
+    font-weight: bold;
+    width: 65%;
+
+    margin: 8px;
+    float: right;
+    position: relative;
+}
+
+#nav {
+    font-size: 130%;
+    font-weight: bold;
+    width: 75%;
+    float: left;
+    margin: 8px;
+    float: right;
+    position: relative;
+
+}
+
+#contact {
+    font-size: 300%;
+    width: 55%;
+    float: right;
+    padding: 50px;
+}
+
+#contact a {
+    display: none;
+    font-size: 100%;
+    width: 55%;
+    float: right;
+    padding: 50px;
+}
+
+#menu-title-globe {
+    font-size: 500%;
+    font-weight: bold;
+    color: black;
+}
+
+.contact-imgs {
+    display: none;
+    width: 5%;
+    width: 25%;
+    margin: 0 auto;
+    clear: both;
+}
+
+.contact-all {
+    width: 600px;
+}
+
+.contact-main {
+     float: left;
+}
+
+.contact-main ul{
+    width: 100px;
+    list-style: none;
+
+}
+
+.contact-main img {
+    width: 70px;
+    height: 70px;
+}
+
+
+
+.contact-side-photo {
+    float: left;
+}
+
+.menu-container {
+    padding: 5px;
+}
+
+#about-text {
+    width: 90%;
+    float: left;
+    margin: 20px;
+    padding: 20px;
+    font-size: 200%;
+}
+
+#about-imgs {
+
+    width: 450px;
+    float: left;
+    position: relative;
+
+}
+
+#contact-about a {
+    width: 100%;
+    font-size: 200%;
+    float: right;
+    font-weight: bold;
+    color: black;
+}
+
+/*joe images smaller*/
+
+.main-gallery {
+  max-width: 759px;
+}
+
+.main-gallery .gallery-cell img {
+
+  max-width: 900px;
+  max-height: 506px;
+}
+
+
+/*media only below*/
+
+@media only screen and (max-device-width: 800px){
+    body {
+        color: ;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .site-title {
+        font-size: 700%;
+    }
+
+    .main-content {
+        display: block;
+    margin: auto;
+    width: 80%;
+    }
+
+    #about-click, #software-click, #photography-click, #music-click, #contact-click, #music-click a{
+        font-size: 300%;
+    }
+
+     .about-container, #about-text, #photography-container, #music-container, #contact-container {
+        font-size: 200%;
+        width: 100%;
+    }
+
+     #photography-container a, #contact-container a, #music-container a {
+       font-size: 100%;
+       width: 100%;
+   }
+
+    #software-container {
+        font-size: 300%;
+    }
+
+    .contact-imgs {
+        width: 100%;
+    }
+
+    .contact-imgs img{
+    width: 120px;
+    height: 120px;
+
+    }
+
+}
