@@ -89,8 +89,15 @@ html, body {
 }
 
 #about {
-  margin: 100px 15px 15px 15px;
-  width: 100%
+  margin: 100px 15px 15px 40px;
+  width: 40%;
+  float: left;
+  font-family: Courier, Arial, sans-serif;
+
+}
+
+#about ul {
+  list-style: none;
 }
 
 @media only screen and (max-device-width: 800px){
