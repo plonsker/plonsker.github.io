@@ -3,6 +3,11 @@ html, body {
   margin: 0; padding: 0; border: 0
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
 .site-title {
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
@@ -34,10 +39,10 @@ html, body {
 .navbar-bottom {
     overflow: hidden;
     background-color: white;
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    /* float: right; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    float: left;
     display: block;
     color: black;
     text-decoration: none;
@@ -68,7 +73,7 @@ html, body {
 }
 
 #container {
-  width: 100%;
+  width: 900px;
   height: 100%;
   padding: 0 0 5px 0;
   margin: 5px;
@@ -78,9 +83,7 @@ html, body {
   flex-wrap: wrap;
 }
 
-#container {
-  width: 100%
-}
+
 
 #container img {
   float: left;
@@ -90,7 +93,7 @@ html, body {
 
 #about {
   margin: 100px 15px 15px 40px;
-  width: 40%;
+  width: 69%;
   float: left;
   font-family: Courier, Arial, sans-serif;
 
