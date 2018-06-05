@@ -1,16 +1,16 @@
 $(document).ready(function() {
 
   $('#container').append(
-    '<a href="http://plonsker.github.io/imgs/DSC00231.JPG" target="_blank"><img src="imgs_large_original/DSC00231.jpg" /></a>',
-    '<a href="http://plonsker.github.io/imgs/DSC04711.JPG" target="_blank"><img src="imgs_large_original/DSC04711.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC00912.JPG" target="_blank"><img src="imgs_large_original/DSC00912.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC08635.JPG" target="_blank"><img src="imgs_large_original/DSC08635.jpg" /></a>',
+    '<a href="http://plonsker.github.io/imgs/DSC00231.JPG" target="_blank"><img src="imgs/DSC00231.JPG" /></a>',
+    '<a href="http://plonsker.github.io/imgs/DSC04711.JPG" target="_blank"><img src="imgs/DSC04711.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC00912.JPG" target="_blank"><img src="imgs_large_original/DSC00912.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC08635.JPG" target="_blank"><img src="imgs_large_original/DSC08635.JPG" /></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/DSC09992.JPG" target="_blank"><img src="imgs/DSC09992.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/wtc_plonsker.JPG" target="_blank"><img src="imgs/wtc_plonsker.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC00928.JPG" target="_blank"><img src="imgs/DSC00928.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0090161.JPG" target="_blank"><img src="imgs/R0090161.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC09992.JPG" target="_blank"><img src="imgs/DSC09992.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/wtc_plonsker.JPG" target="_blank"><img src="imgs/wtc_plonsker.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC00928.JPG" target="_blank"><img src="imgs/DSC00928.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0090161.JPG" target="_blank"><img src="imgs/R0090161.JPG" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/33600012.JPG" target="_blank"><img src="imgs/33600012.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/R0066334.JPG" target="_blank"><img src="imgs/R0066334.jpg" /></a>',
@@ -27,49 +27,49 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/000012700028.jpg" target="_blank"><img src="imgs/000012700028.jpg"  /></a>',
 '<a href="http://plonsker.github.io/imgs/000014050031.jpeg" target="_blank"><img src="imgs/000014050031.jpeg"  /></a>',
 
-'<a href="http://plonsker.github.io/imgs/R0043895.JPG" target="_blank"><img src="imgs/R0043895.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0043895.JPG" target="_blank"><img src="imgs/R0043895.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC07829.JPG" target="_blank"><img src="imgs/DSC07829.JPG"  /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC07754.JPG" target="_blank"><img src="imgs/DSC07754.JPG"  /></a>',
 '<a href="http://plonsker.github.io/imgs//R0098430.JPG" target="_blank"><img src="imgs/R0098430.JPG"  /></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/DSC01140.JPG" target="_blank"><img src="imgs/DSC01140.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC09272.JPG" target="_blank"><img src="imgs/DSC09272.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC02524.JPG" target="_blank"><img src="imgs/DSC02524.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC06956.JPG" target="_blank"><img src="imgs/DSC06956.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC01140.JPG" target="_blank"><img src="imgs/DSC01140.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC09272.JPG" target="_blank"><img src="imgs/DSC09272.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC02524.JPG" target="_blank"><img src="imgs/DSC02524.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC06956.JPG" target="_blank"><img src="imgs/DSC06956.JPG" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/71480035.JPG" target="_blank"><img src="imgs/71480035.JPG"  /></a>',
 '<a href="http://plonsker.github.io/imgs/R0070329-02.jpeg" target="_blank"><img src="imgs/R0070329-02.jpeg" /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC00236.JPG" target="_blank"><img src="imgs/DSC00236.JPG" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC03670.JPG" target="_blank"><img src="imgs/DSC03670.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC03670.JPG" target="_blank"><img src="imgs/DSC03670.JPG" /></a>',
 
-'<a href="http://plonsker.github.io/imgs/DSC07810.JPG" target="_blank"><img src="imgs/DSC07810.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC07810.JPG" target="_blank"><img src="imgs/DSC07810.JPG" /></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/R0067950.JPG" target="_blank"><img src="imgs/R0067950.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0067950.JPG" target="_blank"><img src="imgs/R0067950.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC07336.JPG" target="_blank"><img src="imgs/DSC07336.JPG"  /></a>',
 
-'<a href="http://plonsker.github.io/imgs/R0068598.JPG" target="_blank"><img src="imgs/R0068598.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0068598.JPG" target="_blank"><img src="imgs/R0068598.JPG" /></a>',
 
-'<a href="http://plonsker.github.io/imgs/DSC03674.JPG" target="_blank"><img src="imgs/DSC03674.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0066362.JPG" target="_blank"><img src="imgs/R0066362.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC03674.JPG" target="_blank"><img src="imgs/DSC03674.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0066362.JPG" target="_blank"><img src="imgs/R0066362.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/000012700019.jpg" target="_blank"><img src="imgs/000012700019.jpg"  /></a>',
 '<a href="http://plonsker.github.io/imgs/000042750031.jpg" target="_blank"><img src="imgs/000042750031.jpg"  /></a>',
 
 '<a href="http://plonsker.github.io/imgs/plonsker_slapfishwedding2.jpg" target="_blank"><img src="imgs/plonsker_slapfishwedding2.jpg" /></a>',
 '<a href="http://plonsker.github.io/imgs/FH000007.jpg" target="_blank"><img src="imgs/FH000007.jpg"  /></a>',
 '<a href="http://plonsker.github.io/imgs/FH000002.jpg" target="_blank"><img src="imgs/FH000002.jpg"  /></a>',
-'<a href="http://plonsker.github.io/imgs/R0050424.JPG" target="_blank"><img src="imgs/R0050424.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0050424.JPG" target="_blank"><img src="imgs/R0050424.JPG" /></a>',
 
-'<a href="http://plonsker.github.io/imgs/R0090074.JPG" target="_blank"><img src="imgs/R0090074.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC00924.JPG" target="_blank"><img src="imgs/DSC00924.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC02498.JPG" target="_blank"><img src="imgs/DSC02498.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC00498.JPG" target="_blank"><img src="imgs/DSC00498.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0090074.JPG" target="_blank"><img src="imgs/R0090074.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC00924.JPG" target="_blank"><img src="imgs/DSC00924.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC02498.JPG" target="_blank"><img src="imgs/DSC02498.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC00498.JPG" target="_blank"><img src="imgs/DSC00498.JPG" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/DSC07288.JPG" target="_blank"><img src="imgs/DSC07288.JPG"  /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC08811.JPG" target="_blank"><img src="imgs/DSC08811.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC08811.JPG" target="_blank"><img src="imgs/DSC08811.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/42450009.JPG" target="_blank"><img src="imgs/42450009.JPG"  /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC08900.JPG" target="_blank"><img src="imgs/DSC08900.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC08900.JPG" target="_blank"><img src="imgs/DSC08900.JPG" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/22930010.JPG" target="_blank"><img src="imgs/22930010.JPG"  /></a>',
 '<a href="http://plonsker.github.io/imgs/07670013.JPG" target="_blank"><img src="imgs/07670013.JPG"  /></a>',
@@ -82,13 +82,13 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/plonsker_ceremony.jpg" target="_blank"><img src="imgs/plonsker_ceremony.jpg" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/000012590035.jpg" target="_blank"><img src="imgs/000012590035.jpg"  /></a>',
-'<a href="http://plonsker.github.io/imgs/R0066260.JPG" target="_blank"><img src="imgs/R0066260.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0048218.JPG" target="_blank"><img src="imgs/R0048218.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0066260.JPG" target="_blank"><img src="imgs/R0066260.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0048218.JPG" target="_blank"><img src="imgs/R0048218.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/16880037.JPG" target="_blank"><img src="imgs/16880037.JPG"  /></a>',
 
-'<a href="http://plonsker.github.io/imgs/DSC02932.JPG" target="_blank"><img src="imgs/DSC02932.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC02450.JPG" target="_blank"><img src="imgs/DSC02450.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC02523.JPG" target="_blank"><img src="imgs/DSC02523.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC02932.JPG" target="_blank"><img src="imgs/DSC02932.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC02450.JPG" target="_blank"><img src="imgs/DSC02450.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC02523.JPG" target="_blank"><img src="imgs/DSC02523.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/07640019.JPG" target="_blank"><img src="imgs/07640019.JPG"  /></a>',
 
 '<a href="http://plonsker.github.io/imgs/74310005.JPG" target="_blank"><img src="imgs/74310005.JPG"  /></a>',
@@ -108,14 +108,14 @@ $(document).ready(function() {
 
 '<a href="http://plonsker.github.io/imgs/R0090082.JPG" target="_blank"><img src="imgs/R0090082.jpg" /></a>',
 '<a href="http://plonsker.github.io/imgs/000012700026.jpg" target="_blank"><img src="imgs/000012700026.jpg"  /></a>',
-'<a href="http://plonsker.github.io/imgs/R0045889.JPG" target="_blank"><img src="imgs/R0045889.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0041639-01.jpeg" target="_blank"><img src="imgs/R0041639-01.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0045889.JPG" target="_blank"><img src="imgs/R0045889.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0041639-01.jpeg" target="_blank"><img src="imgs/R0041639-01.jpeg" /></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/R0090160.JPG" target="_blank"><img src="imgs/R0090160.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0090160.JPG" target="_blank"><img src="imgs/R0090160.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/000014050035.jpg" target="_blank"><img src="imgs/000014050035.jpg"  /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC07349.JPG" target="_blank"><img src="imgs/DSC07349.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0069389.JPG" target="_blank"><img src="imgs/R0069389.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC07349.JPG" target="_blank"><img src="imgs/DSC07349.JPG" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0069389.JPG" target="_blank"><img src="imgs/R0069389.JPG" /></a>',
 
 '<a href="http://plonsker.github.io/imgs/79870005.JPG" target="_blank"><img src="imgs/79870005.JPG"  /></a>',
 '<a href="http://plonsker.github.io/imgs/79880018.JPG" target="_blank"><img src="imgs/79880018.JPG"  /></a>',
@@ -126,7 +126,7 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/plonsker_dg4.jpg" target="_blank"><img src="imgs/plonsker_dg4.jpg" /></a>',
 '<a href="http://plonsker.github.io/imgs/plonsker_dg5.jpg" target="_blank"><img src="imgs/plonsker_dg5.jpg" /></a>',
 '<a href="http://plonsker.github.io/imgs/plonsker_slapfishwedding1.jpg" target="_blank"><img src="imgs/plonsker_slapfishwedding1.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0069863.JPG" target="_blank"><img src="imgs/R0069863.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0069863.JPG" target="_blank"><img src="imgs/R0069863.JPG" /></a>',
 
 
 
