@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
   $('#container').append(
-    '<a href="http://plonsker.github.io/imgs/DSC00231.JPG" target="_blank"><img src="imgs/DSC00231.jpg" /></a>',
-    '<a href="http://plonsker.github.io/imgs/DSC04711.JPG" target="_blank"><img src="imgs/DSC04711.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC00912.JPG" target="_blank"><img src="imgs/DSC00912.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/DSC08635.JPG" target="_blank"><img src="imgs/DSC08635.jpg" /></a>',
+    '<a href="http://plonsker.github.io/imgs/DSC00231.JPG" target="_blank"><img src="imgs_large_original/DSC00231.jpg" /></a>',
+    '<a href="http://plonsker.github.io/imgs/DSC04711.JPG" target="_blank"><img src="imgs_large_original/DSC04711.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC00912.JPG" target="_blank"><img src="imgs_large_original/DSC00912.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/DSC08635.JPG" target="_blank"><img src="imgs_large_original/DSC08635.jpg" /></a>',
 
 
 '<a href="http://plonsker.github.io/imgs/DSC09992.JPG" target="_blank"><img src="imgs/DSC09992.jpg" /></a>',
