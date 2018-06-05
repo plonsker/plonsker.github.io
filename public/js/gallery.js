@@ -278,8 +278,8 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/DSC04467.JPG" target="_blank"><img src="imgs/DSC04467.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC05737.JPG" target="_blank"><img src="imgs/DSC05737.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/DSC06717.JPG" target="_blank"><img src="imgs/DSC06717.JPG" /></a>',
-'<a href="http://plonsker.github.io/imgs/IMG_20160711_221718-01.jpeg" target="_blank"><img src="imgs/IMG_20160711_221718-01.jpg" /></a>',
-'<a href="http://plonsker.github.io/imgs/R0060115.JPG" target="_blank"><img src="imgs/R0060115.jpg" /></a>',
+'<a href="http://plonsker.github.io/imgs/IMG_20160711_221718-01.jpeg" target="_blank"><img src="imgs/IMG_20160711_221718-01.jpeg" /></a>',
+'<a href="http://plonsker.github.io/imgs/R0060115.JPG" target="_blank"><img src="imgs/R0060115.JPG" /></a>',
 '<a href="http://plonsker.github.io/imgs/000030060028.jpg" target="_blank"><img src="imgs/000030060028.jpg"  /></a>',
 '<a href="http://plonsker.github.io/imgs/IMG_20160115_135100-01.jpeg" target="_blank"><img src="imgs/IMG_20160115_135100-01.jpeg" /></a>')
 
