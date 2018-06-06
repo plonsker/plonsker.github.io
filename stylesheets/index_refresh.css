@@ -73,7 +73,7 @@ body {
 }
 
 #container {
-  width: 90%;
+  width: 900px;
   height: 100%;
   padding: 0 0 5px 0;
   margin: 5px;
@@ -81,18 +81,14 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-content: flex-start;
-  /* -webkit-columns: 20em;
-  -moz-columns: 20em;
-  columns: 20em; */
 }
 
 
 
 #container img {
   float: left;
-  margin: 30px 5px 20px 5px;
-  max-height: 530px;
+  margin: 20px 5px 20px 5px;
+  width: 200px;
 }
 
 #about {
@@ -123,9 +119,7 @@ body {
   }
 
   #container img {
-    max-height: 950px;
-    max-width: 800px;
-
+    width: 950px;
 
   }
 
