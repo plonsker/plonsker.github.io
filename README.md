@@ -1,4 +1,3 @@
 # plonsker.github.io
 
-This personal site is under reconstruction
-
+My personal site where I am constantly trying out new layout formats and web development tricks. 
