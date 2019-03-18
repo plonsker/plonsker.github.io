@@ -19,23 +19,23 @@ $(document).ready(function() {
 
 '<a href="http://plonsker.github.io/imgs/31.bmp" target="_blank"><img src="imgs/icons/31(1).jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/74330006.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/74330006.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/74330006.JPG" target="_blank"><img src="imgs/icons/74330006.jpeg"/></a>',
 
 
 
 
-'<a href="http://plonsker.github.io/imgs/18A(1).jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/18A(1).jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/18A(1).jpeg" target="_blank"><img src="imgs/icons/18A(1).jpeg"/></a>',
 
 
 
 
-'<a href="http://plonsker.github.io/imgs/000012700028.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000012700028.jpeg"/></a>',
-'<a href="http://plonsker.github.io/imgs/000012700008.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000012700008.jpeg"/></a>',
-'<a href="http://plonsker.github.io/imgs/000012700019.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000012700019.jpeg"/></a>',
-'<a href="http://plonsker.github.io/imgs/000012700021.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000012700021.jpeg"/></a>',
-'<a href="http://plonsker.github.io/imgs/000012700026.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000012700026.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000012700028.jpg" target="_blank"><img src="imgs/icons/000012700028.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000012700008.jpg" target="_blank"><img src="imgs/icons/000012700008.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000012700019.jpg" target="_blank"><img src="imgs/icons/000012700019.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000012700021.jpg" target="_blank"><img src="imgs/icons/000012700021.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000012700026.jpg" target="_blank"><img src="imgs/icons/000012700026.jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/000014050019 (1).jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/000014050019 (1).jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/000014050019 (1).jpeg" target="_blank"><img src="imgs/icons/000014050019 (1).jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/000014050008.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/000014050008.jpeg"/></a>',
 
 
