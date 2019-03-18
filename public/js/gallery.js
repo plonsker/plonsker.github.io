@@ -129,7 +129,7 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/26A.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/26A.jpeg"/></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/27.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/27.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/27 2.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/27 2.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/27.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/27.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/27A.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/27A.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/28(1).jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/28(1).jpeg"/></a>',
