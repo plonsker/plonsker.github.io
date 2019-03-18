@@ -10,14 +10,14 @@ $(document).ready(function() {
 
 '<a href="http://plonsker.github.io/imgs/26A(1).jpg" target="_blank"><img src="imgs/icons/26A(1).jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/R0066334.JPG" target="_blank"><img data-src="imgs/icons/R0066334.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/R0066334.JPG" target="_blank"><img src="imgs/icons/R0066334.jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/11A(1).jpeg" target="_blank"><img data-src="imgs/icons/11A(1).jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/11A(1).jpeg" target="_blank"><img src="imgs/icons/11A(1).jpeg"/></a>',
 
 
-'<a href="http://plonsker.github.io/imgs/64600032.JPG" target="_blank"><img data-src="imgs/icons/64600032.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/64600032.JPG" target="_blank"><img src="imgs/icons/64600032.jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/31.bmp" target="_blank"><img data-src="imgs/icons/31(1).jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/31.bmp" target="_blank"><img src="imgs/icons/31(1).jpeg"/></a>',
 
 '<a href="http://plonsker.github.io/imgs/74330006.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/74330006.jpeg"/></a>',
 
