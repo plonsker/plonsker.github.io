@@ -25,6 +25,9 @@ $(document).ready(function() {
 
 
 '<a href="http://plonsker.github.io/imgs/18A(1).jpeg" target="_blank"><img src="imgs/icons/18A(1).jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/72540024.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/72540024.jpeg"/></a>',
+
+'<a href="http://plonsker.github.io/imgs/72540035.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/72540035.jpeg"/></a>',
 
 
 
@@ -49,6 +52,9 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/DSC09992.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/DSC09992.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/06.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/06.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/38.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/38.jpeg"/></a>',
+'<a href="http://plonsker.github.io/imgs/00(2).jpg" target="_blank"><img class="lazy" data-src="imgs/icons/00(2).jpg"/></a>',
+'<a href="http://plonsker.github.io/imgs/AAA039.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/AAA039.jpeg"/></a>',
+
 '<a href="http://plonsker.github.io/imgs/50400006.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/50400006.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/05(1).jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/05(1).jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/000039150002.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/000039150002.jpeg"/></a>',
@@ -182,9 +188,6 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/72530019.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/72530019.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/72540031.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/72540031.jpeg"/></a>',
 
-'<a href="http://plonsker.github.io/imgs/72540024.jpeg" target="_blank"><img class="lazy" data-src="imgs/icons/72540024.jpeg"/></a>',
-
-'<a href="http://plonsker.github.io/imgs/72540035.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/72540035.jpeg"/></a>',
 
 '<a href="http://plonsker.github.io/imgs/72540004.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/72540004.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/74310005.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/74310005.jpeg"/></a>',
@@ -208,7 +211,6 @@ $(document).ready(function() {
 '<a href="http://plonsker.github.io/imgs/AAA021.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/AAA021.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/AAA036(1).jpg" target="_blank"><img class="lazy" data-src="imgs/icons/AAA036(1).jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/AAA036.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/AAA036.jpeg"/></a>',
-'<a href="http://plonsker.github.io/imgs/AAA039.jpg" target="_blank"><img class="lazy" data-src="imgs/icons/AAA039.jpeg"/></a>',
 
 '<a href="http://plonsker.github.io/imgs/DSC00226.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/DSC00226.jpeg"/></a>',
 '<a href="http://plonsker.github.io/imgs/DSC00230.JPG" target="_blank"><img class="lazy" data-src="imgs/icons/DSC00230.jpeg"/></a>',
