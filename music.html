@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang='en' >
+
+<head>
+  <meta charset='UTF-8'>
+  <title>Zillow like photo gallery</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css'>
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js'></script>
+
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css'>
+  <script type='text/javascript' src='public/js/category-gallery.js'></script>
+
+
+  <link rel='stylesheet' href='css/category-gallery.css'>
+
+
+</head>
+
+<body>
+
+  <ul class='tile-wall'>
+  <li class='tile tile-lg'>
+    <img src='https://s27.postimg.cc/g2so1q503/listing-0.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s28.postimg.cc/j7pcb7r25/listing-1.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s27.postimg.cc/f39ejgmqb/listing-2.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s27.postimg.cc/jcsbgxwvn/listing-3.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s28.postimg.cc/fjfmuntfh/listing-4.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s28.postimg.cc/i6p3m3a2l/listing-5.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s27.postimg.cc/tgk7ajcar/listing-6.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s27.postimg.cc/a7z7p43vn/listing-7.jpg' alt='' class='tile-img'>
+  </li>
+  <li class='tile tile-sm'>
+    <img src='https://s27.postimg.cc/n8u97dzw3/listing-8.jpg' alt='' class='tile-img'>
+  </li>
+</ul>
+
+<button class='js-slideshow'>View images</button>
+
+<!--
+/////
+/////
+///// PhotoSwipe JS Library (add before closing body tag)
+/////
+/////
+-->
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class='pswp' tabindex='-1' role='dialog' aria-hidden='true'>
+
+    <!-- Background of PhotoSwipe.
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class='pswp__bg'></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class='pswp__scroll-wrap'>
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class='pswp__container'>
+            <div class='pswp__item'></div>
+            <div class='pswp__item'></div>
+            <div class='pswp__item'></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class='pswp__ui pswp__ui--hidden'>
+
+            <div class='pswp__top-bar'>
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class='pswp__counter'></div>
+
+                <button class='pswp__button pswp__button--close' title='Close (Esc)'></button>
+
+                <button class='pswp__button pswp__button--share' title='Share'></button>
+
+                <button class='pswp__button pswp__button--fs' title='Toggle fullscreen'></button>
+
+                <button class='pswp__button pswp__button--zoom' title='Zoom in/out'></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class='pswp__preloader'>
+                    <div class='pswp__preloader__icn'>
+                      <div class='pswp__preloader__cut'>
+                        <div class='pswp__preloader__donut'></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='pswp__share-modal pswp__share-modal--hidden pswp__single-tap'>
+                <div class='pswp__share-tooltip'></div>
+            </div>
+
+            <button class='pswp__button pswp__button--arrow--left' title='Previous (arrow left)'>
+            </button>
+
+            <button class='pswp__button pswp__button--arrow--right' title='Next (arrow right)'>
+            </button>
+
+            <div class='pswp__caption'>
+                <div class='pswp__caption__center'></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
+
+
+    <script  src='js/index.js'></script>
+
+
+
+
+</body>
+
+</html>

@@ -1,11 +1,22 @@
 
-html, body {
+/* html, body {
   margin: 0; padding: 0; border: 0
-}
+} */
 
-body {
+/* body {
   display: flex;
   justify-content: center;
+} */
+
+.photo-menu-tiles {
+  margin-top: 100px !important;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.photo-menu-tiles img  {
+  margin: 10px;
 }
 
 .site-title {
