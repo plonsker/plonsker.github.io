@@ -1,0 +1,196 @@
+/*Downloaded from https://www.codeseek.co/travisw/zillow-like-photo-gallery-MvmXdY */
+*,:after,:before{ box-sizing:border-box }
+
+.site-title {
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.site-title a {
+    color: 	#696969;
+    text-decoration: none;
+}
+
+.event-title {
+  margin: 30px !important;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    float: left;
+    display: block;
+    color: black;
+    /*padding: 0px 0px 0px 5px;*/
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+
+
+.navbar-bottom {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    float: left;
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    padding: 5px;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+
+}
+
+
+.navbar-bottom a {
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: 	#696969;
+    text-align: right;
+    font-weight: bold;
+}
+
+
+.navbar-bottom img {
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  float: right;
+}
+
+#container {
+  width: 900px;
+  height: 100%;
+  padding: 0 0 5px 0;
+  margin: 5px;
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+#container img {
+  float: left;
+  margin: 10px 5px 10px 5px;
+  width: 400px;
+}
+
+
+#about {
+  margin: 100px 15px 15px 40px;
+  width: 69%;
+  float: left;
+  font-family: Courier, Arial, sans-serif;
+
+}
+
+#about ul {
+  list-style: none;
+}
+
+@media only screen and (max-device-width: 800px){
+  .site-title {
+      font-size: 500%;
+      text-decoration: none;
+      font-family: Helvetica, Arial, sans-serif;
+  }
+
+  #container {
+    height: 90%;
+    /*padding: 10px;*/
+    margin-top: 250px;
+    /*display: flex;*/
+    width: 100%
+  }
+
+  #container img {
+    width: 950px;
+
+  }
+
+  .navbar {
+      /*padding: 0px 0px 0px 10px;*/
+      margin-bottom: 0;
+  }
+
+  .navbar-bottom {
+    height: 50px;
+  }
+
+  .navbar-bottom img {
+    vertical-align:middle;
+    margin-left: 60px;
+    margin-right: 60px;
+    height: 40px;
+    width: 40px;
+  }
+
+  .navbar-bottom a {
+      font-size: 300%;
+  }
+
+  #about {
+    margin: 200px 15px 15px 40px;
+    font-family: Courier, Arial, sans-serif;
+    font-size: 270%;
+    width: 80%;
+
+  }
+}
+
+.tile-wall {
+  align-content: left;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 454px;
+  justify-content: flex-start;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+}
+
+.tile {
+  margin-right: 4px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tile-lg {
+  background-color: #888;
+  height: 450px;
+  width: 600px;
+}
+
+.tile-sm {
+  background-color: #606060;
+  height: 223px;
+  margin-bottom: 4px;
+  width: 225px;
+}
+
+.tile-img {
+  max-height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+}
+
+.tile-content {
+  height: 100%;
+  width: 100%;
+}
