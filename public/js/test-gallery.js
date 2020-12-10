@@ -1,5 +1,6 @@
 const current = document.querySelectorAll('.current');
 const imgs = document.querySelectorAll('.imgs img');
+const imgsDiv = document.querySelectorAll('.imgs');
 const opacity = 0.4;
 
 imgs[0].style.opacity = opacity;
@@ -36,5 +37,37 @@ function imgClick(e) {
 }
 
 function currentClick(e) {
-  console.log("clicked")
+  let imgArr = []
+
+
+  let currentGallery = imgsDiv[this.id-1];
+
+
+  $(currentGallery).children('img').each(function(){
+    imgArr.push(this);
+});
+
+// imgArr.forEach(item =>
+//   console.log(item)
+//   if (current[this.id-1].src === item.src)){
+//     current[this.id-1].src = current[this.id].src
+//   }
+// )
+
+console.log(imgArr.indexOf(current[this.id].src));
+
+//theres only one current image uuuggghh
+
+
+current[this.id-1].src = imgArr[0].src
+
+//maybe do another loop here
+
+// console.log(imgArr.indexOf(current[this.id].src))
+
+// console.log(imgArr[this.id])
+
+
+  // console.log(imgArr);
+
 }
