@@ -11,63 +11,52 @@ current.forEach(currentImg => currentImg.addEventListener('click', currentClick)
 
 
 
+
+
 $.each($(".current"), function(index, value){
-    var num = index + 1;
-    $(value).attr("id", + num);
+  var num = index + 1;
+  $(value).attr("id", + num);
 });
 
 $.each($(".imgs"), function(index, value){
-    var num = index + 1;
-    $(value).attr("id", + num);
+  var num = index + 1;
+  $(value).attr("id", + num);
 });
 
 
 
 function imgClick(e) {
-
   imgs.forEach(img => (img.style.opacity = 1));
-
   current[this.parentNode.id - 1].src = e.target.src;
-
   current[this.parentNode.id - 1].classList.add('fade-in');
-
   setTimeout(() => current[this.parentNode.id - 1].classList.remove('fade-in'), 300);
-
   e.target.style.opacity = opacity;
 }
 
+
+var i=0;
+
+
 function currentClick(e) {
+
   let imgArr = []
-
-
   let currentGallery = imgsDiv[this.id-1];
 
-
   $(currentGallery).children('img').each(function(){
-    imgArr.push(this);
-});
+    imgArr.push(this.src);
+  });
 
-// imgArr.forEach(item =>
-//   console.log(item)
-//   if (current[this.id-1].src === item.src)){
-//     current[this.id-1].src = current[this.id].src
-//   }
-// )
+  i++
 
-console.log(imgArr.indexOf(current[this.id].src));
+  if(i < imgArr.length) {
 
-//theres only one current image uuuggghh
+    current[this.id-1].src = imgArr[i];
 
-
-current[this.id-1].src = imgArr[0].src
-
-//maybe do another loop here
-
-// console.log(imgArr.indexOf(current[this.id].src))
-
-// console.log(imgArr[this.id])
+  } else {
+    current[this.id-1].src = imgArr[0]
+    i=0
+  }
 
 
-  // console.log(imgArr);
 
 }
