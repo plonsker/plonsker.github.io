@@ -1,12 +1,12 @@
 const current = document.querySelectorAll('.current');
 const imgs = document.querySelectorAll('.imgs img');
-const imgParent = document.querySelectorAll('.imgs');
 const opacity = 0.4;
 
 imgs[0].style.opacity = opacity;
 
 imgs.forEach(img => img.addEventListener('click', imgClick));
 
+current.forEach(currentImg => currentImg.addEventListener('click', currentClick));
 
 
 
@@ -23,9 +23,8 @@ $.each($(".imgs"), function(index, value){
 
 
 function imgClick(e) {
-  imgs.forEach(img => (img.style.opacity = 1));
 
-  console.log(this.parentNode.id)
+  imgs.forEach(img => (img.style.opacity = 1));
 
   current[this.parentNode.id - 1].src = e.target.src;
 
@@ -34,4 +33,8 @@ function imgClick(e) {
   setTimeout(() => current[this.parentNode.id - 1].classList.remove('fade-in'), 300);
 
   e.target.style.opacity = opacity;
+}
+
+function currentClick(e) {
+  console.log("clicked")
 }
