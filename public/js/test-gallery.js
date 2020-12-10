@@ -10,9 +10,6 @@ imgs.forEach(img => img.addEventListener('click', imgClick));
 current.forEach(currentImg => currentImg.addEventListener('click', currentClick));
 
 
-
-
-
 $.each($(".current"), function(index, value){
   var num = index + 1;
   $(value).attr("id", + num);
@@ -29,7 +26,7 @@ function imgClick(e) {
   imgs.forEach(img => (img.style.opacity = 1));
   current[this.parentNode.id - 1].src = e.target.src;
   current[this.parentNode.id - 1].classList.add('fade-in');
-  setTimeout(() => current[this.parentNode.id - 1].classList.remove('fade-in'), 300);
+  setTimeout(() => current[this.parentNode.id - 1].classList.remove('fade-in'), 333);
   e.target.style.opacity = opacity;
 }
 
@@ -57,6 +54,10 @@ function currentClick(e) {
     i=0
   }
 
+  imgs.forEach(img => (img.style.opacity = 1));
+  current[this.id - 1].classList.add('fade-in');
+  setTimeout(() => current[this.id - 1].classList.remove('fade-in'), 333);
+  // e.target.style.opacity = opacity;
 
 
 }

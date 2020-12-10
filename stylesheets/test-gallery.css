@@ -8,7 +8,11 @@ body {
   margin: auto;
   border: #000000 solid 3px;
   background-color: black;
-  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.galleries {
+  margin-top: 300px;
 }
 
 .main-img img, .imgs img {
