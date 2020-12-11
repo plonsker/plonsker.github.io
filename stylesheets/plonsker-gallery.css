@@ -27,8 +27,24 @@ body {
   margin-top: 100px;
 }
 
+.main-img {
+  display: flex;
+  justify-content: center;
+}
+
 .main-img img, .imgs img {
   width: 100%;
+  max-height: 388px;
+  height: auto;
+  width: auto;
+}
+
+.imgs img {
+  height: auto;
+  /* max-width:100%; */
+  max-height:94.5px;
+  width: auto;
+  height: auto;
 }
 
 .imgs {
@@ -36,6 +52,7 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
   opacity: 1;
+  
 }
 
 @keyframes fadeIn {
