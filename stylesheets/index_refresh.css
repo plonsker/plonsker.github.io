@@ -9,10 +9,12 @@
 } */
 
 .photo-menu-tiles {
-  margin-top: 100px !important;
+  margin-top: 100px;
+  height: 75vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 
 .photo-menu-tiles img  {
@@ -125,7 +127,7 @@
   #container {
     height: 90%;
     /*padding: 10px;*/
-    margin-top: 250px;
+    margin-top: 500px;
     /*display: flex;*/
     width: 100%
   }
@@ -133,6 +135,21 @@
   #container img {
     width: 950px;
 
+  }
+
+  .photo-menu-tiles {
+
+
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin-top: 300px;
+  }
+
+  .photo-menu-tiles {
+    font-size: 100px;
   }
 
   .navbar {

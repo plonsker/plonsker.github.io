@@ -11,8 +11,20 @@ body {
   margin-bottom: 50px;
 }
 
+.gallery-title {
+  background-color: #000000;
+  width: 99%;
+  margin: 5px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.current {
+  max-height: 760px;
+}
+
 .galleries {
-  margin-top: 300px;
+  margin-top: 100px;
 }
 
 .main-img img, .imgs img {
@@ -41,6 +53,13 @@ body {
 .site-title {
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.gallery-title {
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-style: italic;
+
 }
 
 .site-title a {
@@ -144,15 +163,19 @@ body {
   #container {
     height: 90%;
     /*padding: 10px;*/
-    margin-top: 250px;
     /*display: flex;*/
     width: 100%
+  }
+
+  .galleries {
+      margin-top: 200px;
   }
 
   #container img {
     width: 950px;
 
   }
+
 
   .navbar {
       /*padding: 0px 0px 0px 10px;*/
