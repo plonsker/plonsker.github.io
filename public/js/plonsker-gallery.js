@@ -56,6 +56,6 @@ function currentClick(e) {
 
   imgs.forEach(img => (img.style.opacity = 1));
   current[this.id - 1].classList.add('fade-in');
-  setTimeout(() => current[this.id - 1].classList.remove('fade-in'), 333);
+  setTimeout(() => current[this.id - 1].classList.remove('fade-in'), 700);
 
 }
