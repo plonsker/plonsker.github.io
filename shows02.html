@@ -39,8 +39,11 @@
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 <script>
+
+console.log("page 2")
   var elem = document.querySelector('.grid');
   var msnry = new Masonry(elem, {
     itemSelector: '.grid-item',
@@ -50,23 +53,15 @@
 
 
   var elem2 = document.querySelector('.grid');
-  var infScroll = new InfiniteScroll('.grid', {
+  var infScroll = new InfiniteScroll(elem2, {
     path: '/shows0{{#}}.html',
     append: '.grid-item',
     outlayer: msnry,
   });
 
 
-
+console.log('end script')
 
   </script>
-
-  </body>
-  </html>
-
-
-
-
 </body>
-
-</html>
+  </html>
