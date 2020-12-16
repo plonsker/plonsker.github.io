@@ -42,21 +42,16 @@
 
 <script>
   var elem = document.querySelector('.grid');
-  var msnry = new Masonry( elem, {
-    // options
+  var msnry = new Masonry(elem, {
     itemSelector: '.grid-item',
-    // gutter: 10,
-
+    gutter: 10,
   });
 
-  //infnite scroll below
-
   var elem2 = document.querySelector('.grid');
-  var infScroll = new InfiniteScroll( elem2, {
-    // options
+  var infScroll = new InfiniteScroll('.grid', {
     path: '/shows0{{#}}.html',
-    append: 'grid-item',
-
+    append: '.grid-item',
+    outlayer: msnry,
   });
 
 
