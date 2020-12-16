@@ -43,22 +43,27 @@
 
 <script>
 
-console.log("page 2")
-  var elem = document.querySelector('.grid');
-  var msnry = new Masonry(elem, {
-    itemSelector: '.grid-item',
-    gutter: 10,
-  });
+var elem = document.querySelector('.grid');
+var Masonry = require('masonry-layout');
+var InfiniteScroll = require('infinite-scroll');
+var imagesLoaded = require('imagesloaded');
+
+InfiniteScroll.imagesLoaded = imagesLoaded;
+
+var msnry = new Masonry(elem, {
+  itemSelector: '.grid-item',
+  gutter: 10,
+});
 
 
 
-  var elem2 = document.querySelector('.grid');
-  var infScroll = new InfiniteScroll(elem2, {
-    path: '/shows0{{#}}.html',
-    append: '.grid-item',
-    outlayer: msnry,
-  });
+var elem2 = document.querySelector('.grid')
 
+var infScroll = new InfiniteScroll(elem2, {
+  path: '/shows0{{#}}.html',
+  append: '.grid-item',
+  outlayer: msnry,
+});
 
 console.log('end script')
 
