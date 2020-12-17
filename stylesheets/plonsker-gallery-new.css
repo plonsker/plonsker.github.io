@@ -1,4 +1,13 @@
+.grid {
+  height: 600px !important;
+  
+}
+
+.grid.are-images-unloaded {
+  opacity: 0;
+}
+
 .grid-item img {
-  max-width: 200px !important;
-  margin-bottom: 5px;
+  max-width: 300px;
+
 }

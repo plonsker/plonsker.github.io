@@ -10,6 +10,9 @@
 
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
 
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
   <link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
 
 
@@ -17,56 +20,117 @@
 
 
 <body>
+
+  <!-- <script>
+
+  function initialSetup() {
+  if (document.getElementsByClassName("grid")[0] != null) {
+    setTimeout(function() {
+      document.getElementsByClassName("grid")[0].style.display = 'grid';
+    }, 1000);
+  }
+}
+
+initialSetup();
+  </script> -->
+
+
   <div class="grid">
 
 
-  <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201801.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201802.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201803.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201804.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-01.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-02.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-03.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-04.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-05.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-06.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-07.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-08.jpeg"></div>
-</div>
+
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-01.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-02.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-03.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-04.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-05.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-06.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-07.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/deathgrips-2015/dg-2015-08.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201801.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201802.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201803.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201804.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201801.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201802.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201803.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201804.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201805.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201807.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201806.jpeg"></div>
+
+  </div>
 
 
 
 
-<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-<script>
-
-var elem = document.querySelector('.grid');
-var Masonry = require('masonry-layout');
-var InfiniteScroll = require('infinite-scroll');
-var imagesLoaded = require('imagesloaded');
-
-InfiniteScroll.imagesLoaded = imagesLoaded;
-
-var msnry = new Masonry(elem, {
-  itemSelector: '.grid-item',
-  gutter: 10,
-});
+  <script>
 
 
 
-var elem2 = document.querySelector('.grid')
 
-var infScroll = new InfiniteScroll(elem2, {
-  path: '/shows0{{#}}.html',
-  append: '.grid-item',
-  outlayer: msnry,
-});
 
-console.log('end script')
+    // var elem = document.querySelector('.grid');
+    //
+    // var msnry = new Masonry(elem, {
+    //   // Masonry options...
+    //   itemSelector: '.grid-item',
+    //   gutter: 10,
+    //   percentPosition: true,
+    //   stagger: 30,
+    //
+    //   visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+    //   hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    // });
+
+    var elem = document.querySelector('.grid');
+    var msnry;
+
+  imagesLoaded(elem, function() {
+    // init Isotope after all images have loaded
+    msnry = new Masonry( elem, {
+      // Masonry options...
+      itemSelector: '.grid-item',
+      gutter: 10,
+      percentPosition: true,
+      stagger: 30,
+
+      visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+      hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    });
+  });
+
+    // imagesLoaded(elem, function() {
+    //   // grid.classList.remove('are-images-unloaded');
+    //   msnry.options.itemSelector = '.grid-item';
+    //   var items = elem.querySelectorAll('.grid-item');
+    //   msnry.appended(items);
+    //   msnry.layout();
+    // });
+
+
+
+    var elem2 = document.querySelector('.grid')
+
+    var infScroll = new InfiniteScroll(elem2, {
+      path: '/shows0{{#}}.html',
+      append: '.grid-item',
+      checkLastPage: '.pagination__next',
+
+      outlayer: msnry,
+      history: 'push',
+      status: '.page-load-status',
+
+    });
+
+  msnry.layout()
+
+    // msnry.imagesLoaded().progress( function() {
+    // msnry.masonry('layout');
+  // });
+
 
   </script>
 </body>
-  </html>
+</html>

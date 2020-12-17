@@ -8,40 +8,85 @@
   <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/plonsker/plonsker.github.io/master/favicon.ico"/>
 
 
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
 
 
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+<link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
 </head>
 
 
 <body>
 
-<div class="grid">
 
-  <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201801.jpg"></div>
-  <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201802.jpg"></div>
-  <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201803.jpg"></div>
-  <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201804.jpg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201801.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201802.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201803.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201804.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201805.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201807.jpeg"></div>
-  <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201806.jpeg"></div>
+  <div class="grid">
 
-</div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201801.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201802.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201803.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201804.jpg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201801.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201802.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201803.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201804.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201805.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201807.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/pharmakon-haram-2018/hp201806.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201801.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201802.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201803.jpeg"></div>
+    <div class="grid-item"><img src="imgs/shows/trash-talk-afropunk-2018/tt-ap-201804.jpeg"></div>
+
+  </div>
 
 
-<script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
-<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
 
-<script>
+  <script>
+
+
+
+
+  // var elem = document.querySelector('.grid');
+  //
+  // var msnry = new Masonry(elem, {
+  //   // Masonry options...
+  //   itemSelector: '.grid-item',
+  //   gutter: 10,
+  //   percentPosition: true,
+  //   stagger: 30,
+  //
+  //   visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+  //   hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+  // });
 
   var elem = document.querySelector('.grid');
+  var msnry;
+
+imagesLoaded(elem, function() {
+  // init Isotope after all images have loaded
+  msnry = new Masonry( elem, {
+    // Masonry options...
+    itemSelector: '.grid-item',
+    gutter: 10,
+    percentPosition: true,
+    stagger: 30,
+
+    visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+    hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+  });
+    msnry.layout()
+});
+
+  // imagesLoaded(elem, function() {
+  //   // grid.classList.remove('are-images-unloaded');
+  //   msnry.options.itemSelector = '.grid-item';
+  //   var items = elem.querySelectorAll('.grid-item');
+  //   msnry.appended(items);
+  //   msnry.layout();
+  // });
+
 
 
   var elem2 = document.querySelector('.grid')
@@ -49,12 +94,22 @@
   var infScroll = new InfiniteScroll(elem2, {
     path: '/shows0{{#}}.html',
     append: '.grid-item',
-    // outlayer: msnry,
     checkLastPage: '.pagination__next',
+
+    outlayer: msnry,
+    history: 'push',
+    status: '.page-load-status',
+
   });
+
+
+
+  // msnry.imagesLoaded().progress( function() {
+  // msnry.masonry('layout');
+// });
 
 
   </script>
 
-  </body>
-  </html>
+</body>
+</html>
