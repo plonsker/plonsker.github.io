@@ -13,14 +13,40 @@
   <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+
 <link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index_refresh.css">
+
 </head>
 
 
 <body>
 
 
-  <div class="grid">
+  <div class="titles">
+
+    <div class="navbar" style="z-index: 999999999999">
+    <h1 class="site-title">
+      <a href="http://plonsker.github.io/"
+    <a href="http://plonsker.github.io/" rel="home">Joe Plonsker</a> | Photography</h1>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div id="container">
+  </div>
+
+  <div class="navbar-bottom" style="z-index: 999999999999">
+
+  <a href="http://plonsker.github.io/info">Info</a>
+  </div>
+
+
+  <div class="grid" id="first-grid">
 
     <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201801.jpg"></div>
     <div class="grid-item"><img src="imgs/shows/lotion-2018/lotion201802.jpg"></div>
@@ -45,27 +71,9 @@
 
   <script>
 
-
-
-
-  // var elem = document.querySelector('.grid');
-  //
-  // var msnry = new Masonry(elem, {
-  //   // Masonry options...
-  //   itemSelector: '.grid-item',
-  //   gutter: 10,
-  //   percentPosition: true,
-  //   stagger: 30,
-  //
-  //   visibleStyle: { transform: 'translateY(0)', opacity: 1 },
-  //   hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
-  // });
-
   var elem = document.querySelector('.grid');
   var msnry;
 
-imagesLoaded(elem, function() {
-  // init Isotope after all images have loaded
   msnry = new Masonry( elem, {
     // Masonry options...
     itemSelector: '.grid-item',
@@ -75,17 +83,8 @@ imagesLoaded(elem, function() {
 
     visibleStyle: { transform: 'translateY(0)', opacity: 1 },
     hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    columnWidth: '.grid-item',
   });
-    msnry.layout()
-});
-
-  // imagesLoaded(elem, function() {
-  //   // grid.classList.remove('are-images-unloaded');
-  //   msnry.options.itemSelector = '.grid-item';
-  //   var items = elem.querySelectorAll('.grid-item');
-  //   msnry.appended(items);
-  //   msnry.layout();
-  // });
 
 
 
@@ -104,9 +103,11 @@ imagesLoaded(elem, function() {
 
 
 
-  // msnry.imagesLoaded().progress( function() {
-  // msnry.masonry('layout');
-// });
+  imagesLoaded(elem2).on( 'progress', function() {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
+
 
 
   </script>

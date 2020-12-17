@@ -1,13 +1,30 @@
-.grid {
+/* .grid {
   height: 600px !important;
-  
-}
 
-.grid.are-images-unloaded {
+} */
+
+.grid .are-images-unloaded {
   opacity: 0;
 }
 
+/* .grid-item {
+   margin-bottom: 10px;
+} */
+
 .grid-item img {
   max-width: 300px;
+}
 
+#first-grid {
+  margin-top: 100px;
+}
+
+
+@media only screen and (max-device-width: 611px){
+  .grid-item {
+    max-width: 90vw;
+  }
+  .grid-item img {
+    max-width: 100%;
+  }
 }
