@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Street and Daily Life</title>
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/plonsker/plonsker.github.io/master/favicon.ico"/>
+
+
+
+
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+
+<link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index_refresh.css">
+
+</head>
+
+
+<body>
+
+
+  <div class="titles">
+
+    <div class="navbar" style="z-index: 999999999999">
+    <h1 class="site-title">
+      <a href="http://plonsker.github.io/"
+    <a href="http://plonsker.github.io/" rel="home">Joe Plonsker</a> | Photography</h1>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div id="container">
+  </div>
+
+  <div class="navbar-bottom" style="z-index: 999999999999">
+
+    <a href="http://plonsker.github.io/about">About | Contact</a>
+  </div>
+
+
+  <div class="grid" id="first-grid">
+
+
+<div class="grid-item"><img src="/imgs/18A.jpeg"></div>
+<div class="grid-item"><img src="/imgs/20(2).jpeg"></div>
+<div class="grid-item"><img src="/imgs/20.jpeg"></div>
+<div class="grid-item"><img src="/imgs/20A.jpeg"></div>
+<div class="grid-item"><img src="/imgs/21310006.JPG"></div>
+<div class="grid-item"><img src="/imgs/21320021.JPG"></div>
+<div class="grid-item"><img src="/imgs/21A.jpeg"></div>
+<div class="grid-item"><img src="/imgs/22.jpeg"></div>
+<div class="grid-item"><img src="/imgs/23(1).jpeg"></div>
+<div class="grid-item"><img src="/imgs/23.jpeg"></div>
+<div class="grid-item"><img src="/imgs/23A.jpeg"></div>
+<div class="grid-item"><img src="/imgs/24.jpg"></div>
+<div class="grid-item"><img src="/imgs/25(1).jpeg"></div>
+<div class="grid-item"><img src="/imgs/25A.jpeg"></div>
+  </div>
+
+
+
+
+
+
+    <script>
+
+    var elem = document.querySelector('.grid');
+    var msnry;
+
+    msnry = new Masonry( elem, {
+      // Masonry options...
+      itemSelector: '.grid-item',
+      gutter: 10,
+      percentPosition: true,
+      stagger: 30,
+      visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+      hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+      columnWidth: '.grid-item',
+    });
+
+
+
+    var elem2 = document.querySelector('.grid')
+
+    var infScroll = new InfiniteScroll(elem2, {
+      path: '/street-daily-life0{{#}}.html',
+      append: '.grid-item',
+      // checkLastPage: '.pagination__next',
+
+      outlayer: msnry,
+      history: 'false',
+      status: '.page-load-status',
+
+    });
+
+
+
+    imagesLoaded(elem2).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+
+
+
+    </script>
+
+
+</body>
+</html>

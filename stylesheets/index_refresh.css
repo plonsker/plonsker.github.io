@@ -1,16 +1,36 @@
 
-html, body {
+/* html, body {
   margin: 0; padding: 0; border: 0
-}
+} */
 
-body {
+/* body {
   display: flex;
   justify-content: center;
+} */
+
+.photo-menu-tiles {
+  margin-top: 100px;
+  height: 75vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.photo-menu-tiles img  {
+  margin: 10px;
 }
 
 .site-title {
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.site-menu a {
+  font-size: 100%;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  color: 	#696969;
 }
 
 .site-title a {
@@ -32,6 +52,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
+    z-index: 99999999999999 !important;
 }
 
 
@@ -52,6 +73,7 @@ body {
     padding: 5px;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
+    z-index: 99999999999999 !important;
 
 }
 
@@ -72,24 +94,6 @@ body {
   float: right;
 }
 
-#container {
-  width: 900px;
-  height: 100%;
-  padding: 0 0 5px 0;
-  margin: 5px;
-  margin-top: 70px;
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-}
-
-
-
-#container img {
-  float: left;
-  margin: 10px 5px 10px 5px;
-  width: 400px;
-}
 
 
 #about {
@@ -104,34 +108,43 @@ body {
   list-style: none;
 }
 
-@media only screen and (max-device-width: 800px){
+@media only screen and (max-device-width: 611px){
   .site-title {
-      font-size: 500%;
+      font-size: 330%;
       text-decoration: none;
       font-family: Helvetica, Arial, sans-serif;
+      text-align: center;
   }
 
-  #container {
-    height: 90%;
-    /*padding: 10px;*/
-    margin-top: 250px;
-    /*display: flex;*/
-    width: 100%
+  .site-menu a {
+    font-size: 170%;
+
   }
 
-  #container img {
-    width: 950px;
+  .photo-menu-tiles {
 
+
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    align-items: flex-start;
+    margin-top: 300px;
+  }
+
+  .photo-menu-tiles {
+    font-size: 100px;
   }
 
   .navbar {
       /*padding: 0px 0px 0px 10px;*/
       margin-bottom: 0;
+      padding-top: 10px;
   }
 
-  .navbar-bottom {
+  /* .navbar-bottom {
     height: 50px;
-  }
+  } */
 
   .navbar-bottom img {
     vertical-align:middle;

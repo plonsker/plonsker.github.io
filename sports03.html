@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sports</title>
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/plonsker/plonsker.github.io/master/favicon.ico"/>
+
+
+
+
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/index_refresh.css">
+</head>
+
+
+<body>
+
+  <div class="grid">
+
+
+
+
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2018/tb-2018-01.jpeg"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2018/tb-2018-02.jpeg"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2018/tb-2018-03.jpeg"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2018/tb-2018-04.jpeg"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2015/tb-2015-01.JPG"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2015/tb-2015-02.JPG"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2015/tb-2015-03.JPG"></div>
+      <div class="grid-item"><img src="imgs/sports/turkey-bowl-2015/tb-2015-04.JPG"></div>
+
+
+
+
+
+  </div>
+
+
+
+  <script>
+  var elem = document.querySelector('.grid');
+  var msnry;
+
+  msnry = new Masonry( elem, {
+    // Masonry options...
+    itemSelector: '.grid-item',
+    gutter: 10,
+    percentPosition: true,
+    stagger: 30,
+
+    visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+    hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+    columnWidth: '.grid-item',
+  });
+
+
+
+  var elem2 = document.querySelector('.grid')
+
+  var infScroll = new InfiniteScroll(elem2, {
+    path: '/sports0{{#}}.html',
+    append: '.grid-item',
+    checkLastPage: '.pagination__next',
+    outlayer: msnry,
+    history: 'false',
+    status: '.page-load-status',
+
+  });
+
+
+
+  imagesLoaded(elem2).on( 'progress', function() {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
+
+
+</script>
+
+
+
+
+</body>
+</html>

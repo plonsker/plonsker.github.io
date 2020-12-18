@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Street and Daily Life</title>
+  <link rel="shortcut icon" type="image/png" href="https://raw.githubusercontent.com/plonsker/plonsker.github.io/master/favicon.ico"/>
+
+
+
+
+  <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <!-- <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script> -->
+
+<link rel="stylesheet" href="stylesheets/plonsker-gallery-new.css">
+<link rel="stylesheet" type="text/css" href="stylesheets/index_refresh.css">
+
+</head>
+
+
+<body>
+
+
+  <div class="titles">
+
+    <div class="navbar" style="z-index: 999999999999">
+    <h1 class="site-title">
+      <a href="http://plonsker.github.io/"
+    <a href="http://plonsker.github.io/" rel="home">Joe Plonsker</a> | Street and Daily Life</h1>
+
+    </div>
+
+
+
+
+  </div>
+
+  <div id="container">
+  </div>
+
+  <div class="navbar-bottom" style="z-index: 999999999999">
+
+    <a href="http://plonsker.github.io/about">About | Contact</a>
+  </div>
+
+
+  <div class="grid" id="first-grid">
+
+
+      <div class="grid-item"><img src="/imgs/7A.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/10A.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/29A.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/26A(1).jpg"></div>
+      <div class="grid-item"><img src="/imgs/R0066334.JPG"></div>
+      <div class="grid-item"><img src="/imgs/11A(1).jpeg"></div>
+      <div class="grid-item"><img src="/imgs/64600032.JPG"></div>
+      <div class="grid-item"><img src="/imgs/31.bmp"></div>
+      <div class="grid-item"><img src="/imgs/74330006.JPG"></div>
+      <div class="grid-item"><img src="/imgs/18A(1).jpeg"></div>
+      <div class="grid-item"><img src="/imgs/72540024.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/72540035.JPG"></div>
+      <div class="grid-item"><img src="/imgs/000012700028.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000012700008.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000012700019.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000012700021.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000012700026.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000014050019 (1).jpeg"></div>
+      <div class="grid-item"><img src="/imgs/000014050008.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/000014050035.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000012590035.jpg"></div>
+      <div class="grid-item"><img src="/imgs/000014050031.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/DSC09992.JPG"></div>
+      <div class="grid-item"><img src="/imgs/38.jpeg"></div>
+      <div class="grid-item"><img src="/imgs/00(2).jpg"></div>
+      <div class="grid-item"><img src="/imgs/AAA039.jpg"></div>
+      <div class="grid-item"><img src="/imgs/50400006.JPG"></div>
+      <div class="grid-item"><img src="/imgs/05(1).jpeg"></div>
+
+  </div>
+
+
+
+
+
+
+    <script>
+
+    var elem = document.querySelector('.grid');
+    var msnry;
+
+    msnry = new Masonry( elem, {
+      // Masonry options...
+      itemSelector: '.grid-item',
+      gutter: 10,
+      percentPosition: true,
+      stagger: 30,
+      visibleStyle: { transform: 'translateY(0)', opacity: 1 },
+      hiddenStyle: { transform: 'translateY(100px)', opacity: 0 },
+      columnWidth: '.grid-item',
+    });
+
+
+
+    var elem2 = document.querySelector('.grid')
+
+    var infScroll = new InfiniteScroll(elem2, {
+      path: '/street-daily-life0{{#}}.html',
+      append: '.grid-item',
+      // checkLastPage: '.pagination__next',
+
+      outlayer: msnry,
+      history: 'false',
+      status: '.page-load-status',
+
+    });
+
+
+
+    imagesLoaded(elem2).on( 'progress', function() {
+      // layout Masonry after each image loads
+      msnry.layout();
+    });
+
+
+
+    </script>
+
+
+</body>
+</html>
