@@ -35,10 +35,10 @@
 
 }
 
-.grid-index-items span {
+/* .grid-index-items span {
 background-color: black;
 
-}
+} */
 
 .grid-index-items img{
   max-width: 400px;
@@ -59,6 +59,11 @@ background-color: black;
 
   #first-grid {
     margin-top: 215px;
+  }
+
+  .menu-items {
+    justify-self: center;
+
   }
 
   .grid-index-items img{
