@@ -11,9 +11,9 @@
    margin-bottom: 5px !important;
 }
 
-.grid-item img {
+/* .grid-item img {
   max-width: 300px;
-}
+} */
 
 .grid-index {
   display: grid;
@@ -54,7 +54,7 @@ background-color: black;
     max-width: 100%;
   }
   .grid-item img {
-    max-width: 100%;
+    width: 98vw !important;
   }
 
   #first-grid {
