@@ -11,9 +11,9 @@
    margin-bottom: 5px !important;
 }
 
-/* .grid-item img {
-  max-width: 300px;
-} */
+.grid-item img {
+  width: 300px;
+}
 
 .grid-index {
   display: grid;
